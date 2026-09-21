@@ -33,6 +33,7 @@ data/private/
 
 # tooling
 .DS_Store
+*.swp
 .idea/
 .vscode/
 *.log
