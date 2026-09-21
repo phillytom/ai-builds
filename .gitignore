@@ -1,0 +1,40 @@
+# secrets
+.env
+.env.*
+!.env.example
+
+# node
+node_modules/
+.next/
+dist/
+build/
+.vercel/
+*.tsbuildinfo
+npm-debug.log*
+
+# python
+.venv/
+venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# model weights and large artifacts
+models/
+*.gguf
+*.safetensors
+*.pt
+*.ckpt
+*.mp4
+*.mov
+
+# data that must never be committed
+data/private/
+
+# tooling
+.DS_Store
+.idea/
+.vscode/
+*.log
+CLAUDE.local.md
+.claude/settings.local.json
