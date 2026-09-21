@@ -1,6 +1,6 @@
 # 01 · Frontier APIs side by side
 
-> **Status:** In progress · **Target:** Mon Sep 21 · **Timebox:** 2 hours
+> **Status:** Shipped Sep 21 · **Target:** Mon Sep 21 · **Timebox:** 2 hours
 
 | Model | intent | order id | SKU | sentiment | urgency | action | all 6 right | median latency | p95 latency | cost per email | cost per day at 1,000 emails |
 |---|---|---|---|---|---|---|---|---|---|---|---|
@@ -69,7 +69,7 @@ Claude was 2x the price of the others - still negligible at fractions of a penny
 
 | Item | Amount |
 |---|---|
-| Time spent | about 1 h 20 min (TOM: confirm) |
+| Time spent | about 1 h 25 min |
 | API / credits, final run (90 calls) | $0.107: Claude $0.051, GPT $0.028, Gemini $0.028 |
 | API / credits, whole session | about $0.30, including two earlier runs that Gemini errors cut short and the single-email tests |
 | Would cost at 1,000 requests a day | Claude Haiku 4.5 $1.71 a day ($51 a month); GPT-5.4-mini $0.92 a day ($28 a month); Gemini 3.8 Flash $0.94 a day ($28 a month) |
@@ -91,5 +91,5 @@ In my opinion, this test makes it clear that *any* online ecommerce store needs 
 
 ## Links
 
-- Docs I actually used: Anthropic structured outputs (from the API reference bundled with Claude Code; TOM: add the public link), [OpenAI structured outputs](https://developers.openai.com/api/docs/guides/structured-outputs), [OpenAI reasoning](https://developers.openai.com/api/docs/guides/reasoning), [Gemini structured output](https://ai.google.dev/gemini-api/docs/structured-output), [Gemini thinking](https://ai.google.dev/gemini-api/docs/thinking), [Gemini rate limits](https://ai.google.dev/gemini-api/docs/rate-limits)
+- Docs I actually used: [Anthropic structured outputs](https://platform.claude.com/docs/en/build-with-claude/structured-outputs), [OpenAI structured outputs](https://developers.openai.com/api/docs/guides/structured-outputs), [OpenAI reasoning](https://developers.openai.com/api/docs/guides/reasoning), [Gemini structured output](https://ai.google.dev/gemini-api/docs/structured-output), [Gemini thinking](https://ai.google.dev/gemini-api/docs/thinking), [Gemini rate limits](https://ai.google.dev/gemini-api/docs/rate-limits)
 - Post:
