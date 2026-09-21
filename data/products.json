@@ -1,0 +1,751 @@
+[
+  {
+    "sku": "KT-1001",
+    "name": "Rapid-Boil Electric Kettle 1.7L",
+    "category": "small appliances",
+    "description": "Boils a full 1.7 litres in under five minutes and shuts off automatically. The push-button lid opens one-handed for easy filling.",
+    "price": 59,
+    "variants": [
+      {
+        "id": "KT-1001-BLK",
+        "color": "Matte Black"
+      },
+      {
+        "id": "KT-1001-WHT",
+        "color": "White"
+      },
+      {
+        "id": "KT-1001-RED",
+        "color": "Tomato Red"
+      }
+    ],
+    "attributes": {
+      "capacity": "1.7 L",
+      "wattage": 1500,
+      "material": "stainless steel",
+      "induction_compatible": null,
+      "dishwasher_safe": false,
+      "warranty_months": 24
+    },
+    "inventory": 140,
+    "flags": [
+      "known_defect"
+    ],
+    "shipping_surcharge_usd": 0,
+    "bundle_skus": [],
+    "known_issues": [
+      {
+        "id": "KI-001",
+        "summary": "Lid latch may not fully engage, so the lid can pop open while pouring.",
+        "affects": "units shipped before 2026-09-01",
+        "remedy": "free replacement lid assembly, or a full replacement on request"
+      }
+    ]
+  },
+  {
+    "sku": "KT-1002",
+    "name": "Wide-Slot 2-Slice Toaster",
+    "category": "small appliances",
+    "description": "Extra-wide slots take bagels and thick sourdough without squashing them. Seven browning levels plus defrost and reheat.",
+    "price": 49,
+    "variants": [
+      {
+        "id": "KT-1002-BLK",
+        "color": "Matte Black"
+      },
+      {
+        "id": "KT-1002-CRM",
+        "color": "Cream"
+      }
+    ],
+    "attributes": {
+      "capacity": "2 slices",
+      "wattage": 900,
+      "material": "stainless steel",
+      "induction_compatible": null,
+      "dishwasher_safe": false,
+      "warranty_months": 12
+    },
+    "inventory": 85,
+    "flags": [],
+    "shipping_surcharge_usd": 0,
+    "bundle_skus": [],
+    "known_issues": []
+  },
+  {
+    "sku": "KT-1003",
+    "name": "Personal Blender 600W",
+    "category": "small appliances",
+    "description": "Blends a smoothie straight into its own travel cup in about thirty seconds. Comes with two 20 oz cups and sip lids.",
+    "price": 79,
+    "variants": [
+      {
+        "id": "KT-1003-GRY",
+        "color": "Slate Grey"
+      },
+      {
+        "id": "KT-1003-GRN",
+        "color": "Sage Green"
+      }
+    ],
+    "attributes": {
+      "capacity": "20 oz",
+      "wattage": 600,
+      "material": "BPA-free Tritan",
+      "induction_compatible": null,
+      "dishwasher_safe": true,
+      "warranty_months": 12
+    },
+    "inventory": 64,
+    "flags": [],
+    "shipping_surcharge_usd": 0,
+    "bundle_skus": [],
+    "known_issues": []
+  },
+  {
+    "sku": "KT-1004",
+    "name": "Compact Air Fryer 4 Qt",
+    "category": "small appliances",
+    "description": "Crisps fries, wings and vegetables with little or no oil. The nonstick basket lifts out and fits in a standard dishwasher rack.",
+    "price": 129,
+    "variants": [],
+    "attributes": {
+      "capacity": "4 qt",
+      "wattage": 1500,
+      "material": "steel with nonstick basket",
+      "induction_compatible": null,
+      "dishwasher_safe": true,
+      "warranty_months": 12
+    },
+    "inventory": 37,
+    "flags": [],
+    "shipping_surcharge_usd": 0,
+    "bundle_skus": [],
+    "known_issues": []
+  },
+  {
+    "sku": "KT-1005",
+    "name": "5-Speed Hand Mixer",
+    "category": "small appliances",
+    "description": "Five speeds and a slow start so flour stays in the bowl. Beaters and dough hooks store in the snap-on case.",
+    "price": 45,
+    "variants": [
+      {
+        "id": "KT-1005-WHT",
+        "color": "White"
+      },
+      {
+        "id": "KT-1005-RED",
+        "color": "Tomato Red"
+      }
+    ],
+    "attributes": {
+      "capacity": null,
+      "wattage": 250,
+      "material": "ABS plastic, stainless beaters",
+      "induction_compatible": null,
+      "dishwasher_safe": false,
+      "warranty_months": 12
+    },
+    "inventory": 58,
+    "flags": [],
+    "shipping_surcharge_usd": 0,
+    "bundle_skus": [],
+    "known_issues": []
+  },
+  {
+    "sku": "KT-1006",
+    "name": "Fuzzy-Logic Rice Cooker 6-Cup",
+    "category": "small appliances",
+    "description": "Adjusts time and temperature on its own for white, brown and sushi rice. Keeps rice warm for up to twelve hours.",
+    "price": 89,
+    "variants": [],
+    "attributes": {
+      "capacity": "6 cups uncooked",
+      "wattage": 500,
+      "material": "aluminium inner pot, nonstick",
+      "induction_compatible": null,
+      "dishwasher_safe": false,
+      "warranty_months": 12
+    },
+    "inventory": 41,
+    "flags": [],
+    "shipping_surcharge_usd": 0,
+    "bundle_skus": [],
+    "known_issues": []
+  },
+  {
+    "sku": "KT-2001",
+    "name": "Everyday Nonstick Skillet 8\"",
+    "category": "cookware",
+    "description": "A small skillet for eggs, a single fillet or toasting spices. Three-layer PFOA-free nonstick on a hard-anodised body.",
+    "price": 34,
+    "variants": [],
+    "attributes": {
+      "capacity": "8 in",
+      "wattage": null,
+      "material": "hard-anodised aluminium",
+      "induction_compatible": false,
+      "dishwasher_safe": true,
+      "warranty_months": 24
+    },
+    "inventory": 120,
+    "flags": [],
+    "shipping_surcharge_usd": 0,
+    "bundle_skus": [],
+    "known_issues": []
+  },
+  {
+    "sku": "KT-2002",
+    "name": "Everyday Nonstick Skillet 10\"",
+    "category": "cookware",
+    "description": "The pan for weeknight dinners, big enough for two chicken breasts or a four-egg omelette. Three-layer PFOA-free nonstick on a hard-anodised body.",
+    "price": 44,
+    "variants": [],
+    "attributes": {
+      "capacity": "10 in",
+      "wattage": null,
+      "material": "hard-anodised aluminium",
+      "induction_compatible": false,
+      "dishwasher_safe": true,
+      "warranty_months": 24
+    },
+    "inventory": 96,
+    "flags": [],
+    "shipping_surcharge_usd": 0,
+    "bundle_skus": [],
+    "known_issues": []
+  },
+  {
+    "sku": "KT-2003",
+    "name": "Tri-Ply Stainless Saucepan 3 Qt",
+    "category": "cookware",
+    "description": "Aluminium core clad in stainless steel heats evenly all the way up the sides. Includes a tight-fitting lid and interior measuring marks.",
+    "price": 59,
+    "variants": [],
+    "attributes": {
+      "capacity": "3 qt",
+      "wattage": null,
+      "material": "tri-ply stainless steel",
+      "induction_compatible": true,
+      "dishwasher_safe": true,
+      "warranty_months": 120
+    },
+    "inventory": 73,
+    "flags": [],
+    "shipping_surcharge_usd": 0,
+    "bundle_skus": [],
+    "known_issues": []
+  },
+  {
+    "sku": "KT-2004",
+    "name": "Enameled Cast Iron Dutch Oven 7 Qt",
+    "category": "cookware",
+    "description": "Holds heat for slow braises, soups and no-knead bread. Weighs 15 lb (6.9 kg), so a heavy-item shipping surcharge applies.",
+    "price": 189,
+    "variants": [
+      {
+        "id": "KT-2004-BLU",
+        "color": "Deep Blue"
+      },
+      {
+        "id": "KT-2004-CRM",
+        "color": "Cream"
+      },
+      {
+        "id": "KT-2004-RED",
+        "color": "Tomato Red"
+      }
+    ],
+    "attributes": {
+      "capacity": "7 qt",
+      "wattage": null,
+      "material": "enameled cast iron",
+      "induction_compatible": true,
+      "dishwasher_safe": false,
+      "warranty_months": 120
+    },
+    "inventory": 22,
+    "flags": [
+      "heavy_item_surcharge"
+    ],
+    "shipping_surcharge_usd": 15,
+    "bundle_skus": [],
+    "known_issues": [],
+    "weight_kg": 6.9
+  },
+  {
+    "sku": "KT-2005",
+    "name": "Carbon Steel Wok 12\"",
+    "category": "cookware",
+    "description": "Heats fast and builds a natural nonstick patina the more you cook. Flat bottom sits steady on gas, electric and induction hobs.",
+    "price": 69,
+    "variants": [],
+    "attributes": {
+      "capacity": "12 in",
+      "wattage": null,
+      "material": "carbon steel",
+      "induction_compatible": true,
+      "dishwasher_safe": false,
+      "warranty_months": 24
+    },
+    "inventory": 48,
+    "flags": [],
+    "shipping_surcharge_usd": 0,
+    "bundle_skus": [],
+    "known_issues": []
+  },
+  {
+    "sku": "KT-2006",
+    "name": "Everyday Cookware Bundle (3-Piece)",
+    "category": "cookware",
+    "description": "The 8\" skillet, 10\" skillet and 3 qt saucepan in one box for less than buying them separately. A good first set for a new kitchen.",
+    "price": 119,
+    "variants": [],
+    "attributes": {
+      "capacity": "3 pieces",
+      "wattage": null,
+      "material": "see component products",
+      "induction_compatible": null,
+      "dishwasher_safe": null,
+      "warranty_months": 24
+    },
+    "inventory": 30,
+    "flags": [
+      "bundle"
+    ],
+    "shipping_surcharge_usd": 0,
+    "bundle_skus": [
+      "KT-2001",
+      "KT-2002",
+      "KT-2003"
+    ],
+    "known_issues": []
+  },
+  {
+    "sku": "KT-3001",
+    "name": "Chef's Knife 8\"",
+    "category": "knives & prep",
+    "description": "A full-tang all-rounder for chopping, slicing and mincing. Ground to a 15-degree edge and balanced at the bolster.",
+    "price": 89,
+    "variants": [],
+    "attributes": {
+      "capacity": "8 in blade",
+      "wattage": null,
+      "material": "high-carbon stainless steel",
+      "induction_compatible": null,
+      "dishwasher_safe": false,
+      "warranty_months": 120
+    },
+    "inventory": 66,
+    "flags": [],
+    "shipping_surcharge_usd": 0,
+    "bundle_skus": [],
+    "known_issues": []
+  },
+  {
+    "sku": "KT-3002",
+    "name": "Paring Knife 3.5\"",
+    "category": "knives & prep",
+    "description": "For peeling, trimming and any job too fiddly for a big knife. Same steel and handle as the 8\" chef's knife.",
+    "price": 29,
+    "variants": [],
+    "attributes": {
+      "capacity": "3.5 in blade",
+      "wattage": null,
+      "material": "high-carbon stainless steel",
+      "induction_compatible": null,
+      "dishwasher_safe": false,
+      "warranty_months": 120
+    },
+    "inventory": 110,
+    "flags": [],
+    "shipping_surcharge_usd": 0,
+    "bundle_skus": [],
+    "known_issues": []
+  },
+  {
+    "sku": "KT-3003",
+    "name": "Serrated Bread Knife 9\"",
+    "category": "knives & prep",
+    "description": "Long scalloped serrations cut crusty loaves without crushing the crumb. Also handy for tomatoes and layer cakes.",
+    "price": 49,
+    "variants": [],
+    "attributes": {
+      "capacity": "9 in blade",
+      "wattage": null,
+      "material": "high-carbon stainless steel",
+      "induction_compatible": null,
+      "dishwasher_safe": false,
+      "warranty_months": 120
+    },
+    "inventory": 52,
+    "flags": [],
+    "shipping_surcharge_usd": 0,
+    "bundle_skus": [],
+    "known_issues": []
+  },
+  {
+    "sku": "KT-3004",
+    "name": "Acacia Cutting Board",
+    "category": "knives & prep",
+    "description": "End-grain acacia is kind to knife edges and heavy enough to stay put. Juice groove on one side, flat on the other.",
+    "price": 45,
+    "variants": [
+      {
+        "id": "KT-3004-M",
+        "size": "Medium 14 x 10 in"
+      },
+      {
+        "id": "KT-3004-L",
+        "size": "Large 18 x 12 in"
+      }
+    ],
+    "attributes": {
+      "capacity": null,
+      "wattage": null,
+      "material": "acacia wood",
+      "induction_compatible": null,
+      "dishwasher_safe": false,
+      "warranty_months": 12
+    },
+    "inventory": 77,
+    "flags": [],
+    "shipping_surcharge_usd": 0,
+    "bundle_skus": [],
+    "known_issues": []
+  },
+  {
+    "sku": "KT-3005",
+    "name": "Adjustable Mandoline Slicer",
+    "category": "knives & prep",
+    "description": "A dial sets slice thickness from paper-thin to 9 mm, with julienne blades built in. Ships with a hand guard and a cut-resistant glove.",
+    "price": 39,
+    "variants": [],
+    "attributes": {
+      "capacity": null,
+      "wattage": null,
+      "material": "stainless steel blade, ABS body",
+      "induction_compatible": null,
+      "dishwasher_safe": true,
+      "warranty_months": 12
+    },
+    "inventory": 45,
+    "flags": [],
+    "shipping_surcharge_usd": 0,
+    "bundle_skus": [],
+    "known_issues": []
+  },
+  {
+    "sku": "KT-3006",
+    "name": "Dual-Grit Whetstone 1000/6000",
+    "category": "knives & prep",
+    "description": "The 1000 grit side restores a dull edge and the 6000 side polishes it. Comes with a non-slip bamboo base and an angle guide.",
+    "price": 35,
+    "variants": [],
+    "attributes": {
+      "capacity": null,
+      "wattage": null,
+      "material": "corundum",
+      "induction_compatible": null,
+      "dishwasher_safe": false,
+      "warranty_months": 12
+    },
+    "inventory": 60,
+    "flags": [],
+    "shipping_surcharge_usd": 0,
+    "bundle_skus": [],
+    "known_issues": []
+  },
+  {
+    "sku": "KT-4001",
+    "name": "Glass Food Storage Set (10-Piece)",
+    "category": "storage",
+    "description": "Five borosilicate glass containers with five snap-lock lids, safe from freezer to oven. The glass will not stain or hold smells.",
+    "price": 42,
+    "variants": [],
+    "attributes": {
+      "capacity": "1 to 6 cups",
+      "wattage": null,
+      "material": "borosilicate glass, BPA-free lids",
+      "induction_compatible": null,
+      "dishwasher_safe": true,
+      "warranty_months": 12
+    },
+    "inventory": 88,
+    "flags": [],
+    "shipping_surcharge_usd": 0,
+    "bundle_skus": [],
+    "known_issues": []
+  },
+  {
+    "sku": "KT-4002",
+    "name": "Airtight Pantry Canisters (Set of 3)",
+    "category": "storage",
+    "description": "One-press lids seal out air and moisture to keep flour, pasta and cereal fresh. Clear sides show what is running low.",
+    "price": 36,
+    "variants": [],
+    "attributes": {
+      "capacity": "0.8 / 1.4 / 2.0 qt",
+      "wattage": null,
+      "material": "BPA-free plastic",
+      "induction_compatible": null,
+      "dishwasher_safe": true,
+      "warranty_months": 12
+    },
+    "inventory": 92,
+    "flags": [],
+    "shipping_surcharge_usd": 0,
+    "bundle_skus": [],
+    "known_issues": []
+  },
+  {
+    "sku": "KT-4003",
+    "name": "Reusable Silicone Bags (4-Pack)",
+    "category": "storage",
+    "description": "Leakproof zip-top bags that replace single-use plastic for snacks, marinades and sous vide. Two sandwich and two half-gallon sizes.",
+    "price": 18,
+    "variants": [],
+    "attributes": {
+      "capacity": "2 x 15 oz, 2 x 64 oz",
+      "wattage": null,
+      "material": "food-grade silicone",
+      "induction_compatible": null,
+      "dishwasher_safe": true,
+      "warranty_months": 12
+    },
+    "inventory": 150,
+    "flags": [],
+    "shipping_surcharge_usd": 0,
+    "bundle_skus": [],
+    "known_issues": []
+  },
+  {
+    "sku": "KT-4004",
+    "name": "Silicone Stretch Lids (6-Pack)",
+    "category": "storage",
+    "description": "Six sizes stretch over bowls, cans, jars and cut fruit. They handle the microwave and the freezer.",
+    "price": 12,
+    "variants": [],
+    "attributes": {
+      "capacity": "2.6 to 8 in",
+      "wattage": null,
+      "material": "food-grade silicone",
+      "induction_compatible": null,
+      "dishwasher_safe": true,
+      "warranty_months": 12
+    },
+    "inventory": 210,
+    "flags": [],
+    "shipping_surcharge_usd": 0,
+    "bundle_skus": [],
+    "known_issues": []
+  },
+  {
+    "sku": "KT-4005",
+    "name": "Vacuum-Seal Coffee & Dry Goods Canister",
+    "category": "storage",
+    "description": "Twist the lid to pump out air and keep coffee beans or nuts fresh for longer. A date wheel on the lid tracks when you filled it.",
+    "price": 32,
+    "variants": [
+      {
+        "id": "KT-4005-BLK",
+        "color": "Matte Black"
+      },
+      {
+        "id": "KT-4005-STL",
+        "color": "Brushed Steel"
+      }
+    ],
+    "attributes": {
+      "capacity": "1.2 qt",
+      "wattage": null,
+      "material": "stainless steel",
+      "induction_compatible": null,
+      "dishwasher_safe": false,
+      "warranty_months": 12
+    },
+    "inventory": 70,
+    "flags": [],
+    "shipping_surcharge_usd": 0,
+    "bundle_skus": [],
+    "known_issues": []
+  },
+  {
+    "sku": "KT-4006",
+    "name": "Glass Spice Jar Set (12 Jars)",
+    "category": "storage",
+    "description": "Twelve 4 oz square jars with shaker inserts and bamboo lids. Includes 120 printed labels and a fine-tip chalk pen.",
+    "price": 24,
+    "variants": [],
+    "attributes": {
+      "capacity": "4 oz each",
+      "wattage": null,
+      "material": "glass, bamboo lids",
+      "induction_compatible": null,
+      "dishwasher_safe": false,
+      "warranty_months": 12
+    },
+    "inventory": 99,
+    "flags": [],
+    "shipping_surcharge_usd": 0,
+    "bundle_skus": [],
+    "known_issues": []
+  },
+  {
+    "sku": "KT-5001",
+    "name": "Conical Burr Grinder",
+    "category": "coffee gear",
+    "description": "Forty grind settings cover everything from espresso to French press. Steel conical burrs run slowly so the beans stay cool.",
+    "price": 149,
+    "variants": [
+      {
+        "id": "KT-5001-BLK",
+        "color": "Matte Black"
+      },
+      {
+        "id": "KT-5001-WHT",
+        "color": "White"
+      }
+    ],
+    "attributes": {
+      "capacity": "8 oz hopper",
+      "wattage": 150,
+      "material": "stainless steel burrs",
+      "induction_compatible": null,
+      "dishwasher_safe": false,
+      "warranty_months": 24
+    },
+    "inventory": 0,
+    "flags": [
+      "out_of_stock"
+    ],
+    "shipping_surcharge_usd": 0,
+    "bundle_skus": [],
+    "known_issues": [],
+    "restock_date": "2026-10-12"
+  },
+  {
+    "sku": "KT-5002",
+    "name": "Pour-Over Dripper Set",
+    "category": "coffee gear",
+    "description": "A ceramic cone dripper, glass server and 40 paper filters for clean single cups. Brews up to 20 oz at a time.",
+    "price": 32,
+    "variants": [
+      {
+        "id": "KT-5002-WHT",
+        "color": "White"
+      },
+      {
+        "id": "KT-5002-BLK",
+        "color": "Matte Black"
+      }
+    ],
+    "attributes": {
+      "capacity": "20 oz",
+      "wattage": null,
+      "material": "ceramic and borosilicate glass",
+      "induction_compatible": null,
+      "dishwasher_safe": true,
+      "warranty_months": 12
+    },
+    "inventory": 83,
+    "flags": [],
+    "shipping_surcharge_usd": 0,
+    "bundle_skus": [],
+    "known_issues": []
+  },
+  {
+    "sku": "KT-5003",
+    "name": "Double-Wall French Press 1L",
+    "category": "coffee gear",
+    "description": "Insulated stainless walls keep coffee hot for about an hour. A two-stage filter keeps grit out of the cup.",
+    "price": 38,
+    "variants": [],
+    "attributes": {
+      "capacity": "1 L",
+      "wattage": null,
+      "material": "stainless steel",
+      "induction_compatible": null,
+      "dishwasher_safe": true,
+      "warranty_months": 12
+    },
+    "inventory": 76,
+    "flags": [],
+    "shipping_surcharge_usd": 0,
+    "bundle_skus": [],
+    "known_issues": []
+  },
+  {
+    "sku": "KT-5004",
+    "name": "Handheld Milk Frother",
+    "category": "coffee gear",
+    "description": "Makes foam for a latte or cappuccino in about twenty seconds. Charges over USB-C and stands on its own base.",
+    "price": 19,
+    "variants": [],
+    "attributes": {
+      "capacity": null,
+      "wattage": 5,
+      "material": "stainless steel whisk",
+      "induction_compatible": null,
+      "dishwasher_safe": false,
+      "warranty_months": 12
+    },
+    "inventory": 134,
+    "flags": [],
+    "shipping_surcharge_usd": 0,
+    "bundle_skus": [],
+    "known_issues": []
+  },
+  {
+    "sku": "KT-5005",
+    "name": "Coffee Scale with Timer",
+    "category": "coffee gear",
+    "description": "Weighs to 0.1 g with a built-in brew timer for repeatable pour-overs. The silicone mat protects it from heat and spills.",
+    "price": 45,
+    "variants": [],
+    "attributes": {
+      "capacity": "2 kg max",
+      "wattage": null,
+      "material": "ABS with silicone mat",
+      "induction_compatible": null,
+      "dishwasher_safe": false,
+      "warranty_months": 12
+    },
+    "inventory": 57,
+    "flags": [],
+    "shipping_surcharge_usd": 0,
+    "bundle_skus": [],
+    "known_issues": []
+  },
+  {
+    "sku": "KT-5006",
+    "name": "Compact Espresso Machine",
+    "category": "coffee gear",
+    "description": "A 15-bar pump and a steam wand in a machine under eight inches wide. Heats up in about forty seconds.",
+    "price": 249,
+    "variants": [
+      {
+        "id": "KT-5006-STL",
+        "color": "Brushed Steel"
+      },
+      {
+        "id": "KT-5006-BLK",
+        "color": "Matte Black"
+      }
+    ],
+    "attributes": {
+      "capacity": "1.4 L tank",
+      "wattage": 1350,
+      "material": "stainless steel",
+      "induction_compatible": null,
+      "dishwasher_safe": false,
+      "warranty_months": 24
+    },
+    "inventory": 18,
+    "flags": [],
+    "shipping_surcharge_usd": 0,
+    "bundle_skus": [],
+    "known_issues": []
+  }
+]

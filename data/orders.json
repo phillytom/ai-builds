@@ -1,0 +1,915 @@
+[
+  {
+    "id": "TK-10201",
+    "customer_first_name": "Nadia",
+    "ship_to_state": "OH",
+    "items": [
+      {
+        "sku": "KT-5002",
+        "variant_id": "KT-5002-WHT",
+        "name": "Pour-Over Dripper Set",
+        "qty": 1,
+        "unit_price": 32
+      }
+    ],
+    "subtotal": 32,
+    "shipping": 6.95,
+    "heavy_item_surcharge": 0,
+    "total": 38.95,
+    "status": "delivered",
+    "carrier": "USPS",
+    "tracking": "TKP080781719",
+    "placed_at": "2026-08-20",
+    "shipped_at": "2026-08-21",
+    "estimated_delivery": "2026-08-25",
+    "delivered_at": "2026-08-25",
+    "note": null
+  },
+  {
+    "id": "TK-10202",
+    "customer_first_name": "Pablo",
+    "ship_to_state": "OH",
+    "items": [
+      {
+        "sku": "KT-3002",
+        "variant_id": null,
+        "name": "Paring Knife 3.5\"",
+        "qty": 1,
+        "unit_price": 29
+      }
+    ],
+    "subtotal": 29,
+    "shipping": 6.95,
+    "heavy_item_surcharge": 0,
+    "total": 35.95,
+    "status": "delivered",
+    "carrier": "FedEx",
+    "tracking": "TKF080789638",
+    "placed_at": "2026-08-21",
+    "shipped_at": "2026-08-22",
+    "estimated_delivery": "2026-08-26",
+    "delivered_at": "2026-08-26",
+    "note": null
+  },
+  {
+    "id": "TK-10203",
+    "customer_first_name": "Hana",
+    "ship_to_state": "FL",
+    "items": [
+      {
+        "sku": "KT-5002",
+        "variant_id": "KT-5002-WHT",
+        "name": "Pour-Over Dripper Set",
+        "qty": 1,
+        "unit_price": 32
+      },
+      {
+        "sku": "KT-4001",
+        "variant_id": null,
+        "name": "Glass Food Storage Set (10-Piece)",
+        "qty": 1,
+        "unit_price": 42
+      }
+    ],
+    "subtotal": 74,
+    "shipping": 6.95,
+    "heavy_item_surcharge": 0,
+    "total": 80.95,
+    "status": "cancelled",
+    "carrier": null,
+    "tracking": null,
+    "placed_at": "2026-08-22",
+    "shipped_at": null,
+    "estimated_delivery": null,
+    "delivered_at": null,
+    "note": "Cancelled by customer before shipping."
+  },
+  {
+    "id": "TK-10204",
+    "customer_first_name": "Noor",
+    "ship_to_state": "MA",
+    "items": [
+      {
+        "sku": "KT-2005",
+        "variant_id": null,
+        "name": "Carbon Steel Wok 12\"",
+        "qty": 1,
+        "unit_price": 69
+      }
+    ],
+    "subtotal": 69,
+    "shipping": 6.95,
+    "heavy_item_surcharge": 0,
+    "total": 75.95,
+    "status": "delivered",
+    "carrier": "USPS",
+    "tracking": "TKP080805476",
+    "placed_at": "2026-08-24",
+    "shipped_at": "2026-08-25",
+    "estimated_delivery": "2026-08-29",
+    "delivered_at": "2026-08-29",
+    "note": null
+  },
+  {
+    "id": "TK-10205",
+    "customer_first_name": "Owen",
+    "ship_to_state": "MA",
+    "items": [
+      {
+        "sku": "KT-4006",
+        "variant_id": null,
+        "name": "Glass Spice Jar Set (12 Jars)",
+        "qty": 1,
+        "unit_price": 24
+      },
+      {
+        "sku": "KT-2001",
+        "variant_id": null,
+        "name": "Everyday Nonstick Skillet 8\"",
+        "qty": 1,
+        "unit_price": 34
+      },
+      {
+        "sku": "KT-3005",
+        "variant_id": null,
+        "name": "Adjustable Mandoline Slicer",
+        "qty": 1,
+        "unit_price": 39
+      }
+    ],
+    "subtotal": 97,
+    "shipping": 0,
+    "heavy_item_surcharge": 0,
+    "total": 97,
+    "status": "delivered",
+    "carrier": "USPS",
+    "tracking": "TKP080813395",
+    "placed_at": "2026-08-24",
+    "shipped_at": "2026-08-25",
+    "estimated_delivery": "2026-08-29",
+    "delivered_at": "2026-08-29",
+    "note": null
+  },
+  {
+    "id": "TK-10206",
+    "customer_first_name": "Elena",
+    "ship_to_state": "GA",
+    "items": [
+      {
+        "sku": "KT-1004",
+        "variant_id": null,
+        "name": "Compact Air Fryer 4 Qt",
+        "qty": 1,
+        "unit_price": 129
+      }
+    ],
+    "subtotal": 129,
+    "shipping": 0,
+    "heavy_item_surcharge": 0,
+    "total": 129,
+    "status": "refunded",
+    "carrier": "FedEx",
+    "tracking": "TKF080821314",
+    "placed_at": "2026-08-25",
+    "shipped_at": "2026-08-26",
+    "estimated_delivery": "2026-08-30",
+    "delivered_at": "2026-08-30",
+    "note": "Returned within 30 days; refunded to original payment method."
+  },
+  {
+    "id": "TK-10207",
+    "customer_first_name": "Marcus",
+    "ship_to_state": "WA",
+    "items": [
+      {
+        "sku": "KT-1004",
+        "variant_id": null,
+        "name": "Compact Air Fryer 4 Qt",
+        "qty": 1,
+        "unit_price": 129
+      }
+    ],
+    "subtotal": 129,
+    "shipping": 0,
+    "heavy_item_surcharge": 0,
+    "total": 129,
+    "status": "delayed",
+    "carrier": "UPS",
+    "tracking": "TKU080829233",
+    "placed_at": "2026-09-09",
+    "shipped_at": "2026-09-10",
+    "estimated_delivery": "2026-09-14",
+    "delivered_at": null,
+    "note": "Carrier scan gap since 2026-09-12; original estimate missed."
+  },
+  {
+    "id": "TK-10208",
+    "customer_first_name": "Jordan",
+    "ship_to_state": "MN",
+    "items": [
+      {
+        "sku": "KT-5003",
+        "variant_id": null,
+        "name": "Double-Wall French Press 1L",
+        "qty": 1,
+        "unit_price": 38
+      },
+      {
+        "sku": "KT-3001",
+        "variant_id": null,
+        "name": "Chef's Knife 8\"",
+        "qty": 1,
+        "unit_price": 89
+      },
+      {
+        "sku": "KT-1003",
+        "variant_id": "KT-1003-GRY",
+        "name": "Personal Blender 600W",
+        "qty": 2,
+        "unit_price": 79
+      }
+    ],
+    "subtotal": 285,
+    "shipping": 0,
+    "heavy_item_surcharge": 0,
+    "total": 285,
+    "status": "delivered",
+    "carrier": "UPS",
+    "tracking": "TKU080837152",
+    "placed_at": "2026-08-27",
+    "shipped_at": "2026-08-28",
+    "estimated_delivery": "2026-09-01",
+    "delivered_at": "2026-09-01",
+    "note": null
+  },
+  {
+    "id": "TK-10209",
+    "customer_first_name": "Walt",
+    "ship_to_state": "GA",
+    "items": [
+      {
+        "sku": "KT-1001",
+        "variant_id": "KT-1001-WHT",
+        "name": "Rapid-Boil Electric Kettle 1.7L",
+        "qty": 1,
+        "unit_price": 59
+      }
+    ],
+    "subtotal": 59,
+    "shipping": 6.95,
+    "heavy_item_surcharge": 0,
+    "total": 65.95,
+    "status": "delivered",
+    "carrier": "USPS",
+    "tracking": "TKP080845071",
+    "placed_at": "2026-08-27",
+    "shipped_at": "2026-08-28",
+    "estimated_delivery": "2026-09-01",
+    "delivered_at": "2026-09-01",
+    "note": null
+  },
+  {
+    "id": "TK-10210",
+    "customer_first_name": "Quinn",
+    "ship_to_state": "SC",
+    "items": [
+      {
+        "sku": "KT-2001",
+        "variant_id": null,
+        "name": "Everyday Nonstick Skillet 8\"",
+        "qty": 1,
+        "unit_price": 34
+      },
+      {
+        "sku": "KT-1001",
+        "variant_id": "KT-1001-BLK",
+        "name": "Rapid-Boil Electric Kettle 1.7L",
+        "qty": 1,
+        "unit_price": 59
+      },
+      {
+        "sku": "KT-3002",
+        "variant_id": null,
+        "name": "Paring Knife 3.5\"",
+        "qty": 2,
+        "unit_price": 29
+      }
+    ],
+    "subtotal": 151,
+    "shipping": 0,
+    "heavy_item_surcharge": 0,
+    "total": 151,
+    "status": "delivered",
+    "carrier": "FedEx",
+    "tracking": "TKF080852990",
+    "placed_at": "2026-08-30",
+    "shipped_at": "2026-08-31",
+    "estimated_delivery": "2026-09-04",
+    "delivered_at": "2026-09-04",
+    "note": null
+  },
+  {
+    "id": "TK-10211",
+    "customer_first_name": "Sam",
+    "ship_to_state": "SC",
+    "items": [
+      {
+        "sku": "KT-2004",
+        "variant_id": "KT-2004-BLU",
+        "name": "Enameled Cast Iron Dutch Oven 7 Qt",
+        "qty": 1,
+        "unit_price": 189
+      }
+    ],
+    "subtotal": 189,
+    "shipping": 0,
+    "heavy_item_surcharge": 15,
+    "total": 204,
+    "status": "delivered",
+    "carrier": "FedEx",
+    "tracking": "TKF080860909",
+    "placed_at": "2026-09-02",
+    "shipped_at": "2026-09-03",
+    "estimated_delivery": "2026-09-07",
+    "delivered_at": "2026-09-07",
+    "note": null
+  },
+  {
+    "id": "TK-10212",
+    "customer_first_name": "Luca",
+    "ship_to_state": "SC",
+    "items": [
+      {
+        "sku": "KT-3002",
+        "variant_id": null,
+        "name": "Paring Knife 3.5\"",
+        "qty": 1,
+        "unit_price": 29
+      },
+      {
+        "sku": "KT-1006",
+        "variant_id": null,
+        "name": "Fuzzy-Logic Rice Cooker 6-Cup",
+        "qty": 1,
+        "unit_price": 89
+      }
+    ],
+    "subtotal": 118,
+    "shipping": 0,
+    "heavy_item_surcharge": 0,
+    "total": 118,
+    "status": "delivered",
+    "carrier": "UPS",
+    "tracking": "TKU080868828",
+    "placed_at": "2026-09-01",
+    "shipped_at": "2026-09-02",
+    "estimated_delivery": "2026-09-06",
+    "delivered_at": "2026-09-06",
+    "note": null
+  },
+  {
+    "id": "TK-10213",
+    "customer_first_name": "Jordan",
+    "ship_to_state": "NC",
+    "items": [
+      {
+        "sku": "KT-1003",
+        "variant_id": "KT-1003-GRN",
+        "name": "Personal Blender 600W",
+        "qty": 2,
+        "unit_price": 79
+      },
+      {
+        "sku": "KT-2002",
+        "variant_id": null,
+        "name": "Everyday Nonstick Skillet 10\"",
+        "qty": 1,
+        "unit_price": 44
+      },
+      {
+        "sku": "KT-3005",
+        "variant_id": null,
+        "name": "Adjustable Mandoline Slicer",
+        "qty": 2,
+        "unit_price": 39
+      }
+    ],
+    "subtotal": 280,
+    "shipping": 0,
+    "heavy_item_surcharge": 0,
+    "total": 280,
+    "status": "delivered",
+    "carrier": "FedEx",
+    "tracking": "TKF080876747",
+    "placed_at": "2026-09-02",
+    "shipped_at": "2026-09-03",
+    "estimated_delivery": "2026-09-07",
+    "delivered_at": "2026-09-07",
+    "note": null
+  },
+  {
+    "id": "TK-10214",
+    "customer_first_name": "Dana",
+    "ship_to_state": "NC",
+    "items": [
+      {
+        "sku": "KT-1001",
+        "variant_id": "KT-1001-RED",
+        "name": "Rapid-Boil Electric Kettle 1.7L",
+        "qty": 1,
+        "unit_price": 59
+      },
+      {
+        "sku": "KT-5002",
+        "variant_id": "KT-5002-WHT",
+        "name": "Pour-Over Dripper Set",
+        "qty": 1,
+        "unit_price": 32
+      }
+    ],
+    "subtotal": 91,
+    "shipping": 0,
+    "heavy_item_surcharge": 0,
+    "total": 91,
+    "status": "delivered",
+    "carrier": "UPS",
+    "tracking": "TKU080884666",
+    "placed_at": "2026-08-24",
+    "shipped_at": "2026-08-25",
+    "estimated_delivery": "2026-08-29",
+    "delivered_at": "2026-08-29",
+    "note": null
+  },
+  {
+    "id": "TK-10215",
+    "customer_first_name": "Owen",
+    "ship_to_state": "OR",
+    "items": [
+      {
+        "sku": "KT-4006",
+        "variant_id": null,
+        "name": "Glass Spice Jar Set (12 Jars)",
+        "qty": 2,
+        "unit_price": 24
+      }
+    ],
+    "subtotal": 48,
+    "shipping": 6.95,
+    "heavy_item_surcharge": 0,
+    "total": 54.95,
+    "status": "delivered",
+    "carrier": "USPS",
+    "tracking": "TKP080892585",
+    "placed_at": "2026-09-04",
+    "shipped_at": "2026-09-05",
+    "estimated_delivery": "2026-09-09",
+    "delivered_at": "2026-09-09",
+    "note": null
+  },
+  {
+    "id": "TK-10216",
+    "customer_first_name": "Harper",
+    "ship_to_state": "IL",
+    "items": [
+      {
+        "sku": "KT-5005",
+        "variant_id": null,
+        "name": "Coffee Scale with Timer",
+        "qty": 1,
+        "unit_price": 45
+      }
+    ],
+    "subtotal": 45,
+    "shipping": 6.95,
+    "heavy_item_surcharge": 0,
+    "total": 51.95,
+    "status": "delivered",
+    "carrier": "UPS",
+    "tracking": "TKU080900504",
+    "placed_at": "2026-09-05",
+    "shipped_at": "2026-09-06",
+    "estimated_delivery": "2026-09-10",
+    "delivered_at": "2026-09-10",
+    "note": null
+  },
+  {
+    "id": "TK-10217",
+    "customer_first_name": "Lena",
+    "ship_to_state": "CA",
+    "items": [
+      {
+        "sku": "KT-2006",
+        "variant_id": null,
+        "name": "Everyday Cookware Bundle (3-Piece)",
+        "qty": 1,
+        "unit_price": 119
+      }
+    ],
+    "subtotal": 119,
+    "shipping": 0,
+    "heavy_item_surcharge": 0,
+    "total": 119,
+    "status": "delivered",
+    "carrier": "UPS",
+    "tracking": "TKU080908423",
+    "placed_at": "2026-09-07",
+    "shipped_at": "2026-09-08",
+    "estimated_delivery": "2026-09-12",
+    "delivered_at": "2026-09-12",
+    "note": null
+  },
+  {
+    "id": "TK-10218",
+    "customer_first_name": "Hana",
+    "ship_to_state": "OH",
+    "items": [
+      {
+        "sku": "KT-3005",
+        "variant_id": null,
+        "name": "Adjustable Mandoline Slicer",
+        "qty": 1,
+        "unit_price": 39
+      },
+      {
+        "sku": "KT-5006",
+        "variant_id": "KT-5006-STL",
+        "name": "Compact Espresso Machine",
+        "qty": 1,
+        "unit_price": 249
+      },
+      {
+        "sku": "KT-2006",
+        "variant_id": null,
+        "name": "Everyday Cookware Bundle (3-Piece)",
+        "qty": 1,
+        "unit_price": 119
+      }
+    ],
+    "subtotal": 407,
+    "shipping": 0,
+    "heavy_item_surcharge": 0,
+    "total": 407,
+    "status": "delivered",
+    "carrier": "UPS",
+    "tracking": "TKU080916342",
+    "placed_at": "2026-09-07",
+    "shipped_at": "2026-09-08",
+    "estimated_delivery": "2026-09-12",
+    "delivered_at": "2026-09-12",
+    "note": null
+  },
+  {
+    "id": "TK-10219",
+    "customer_first_name": "Ingrid",
+    "ship_to_state": "IL",
+    "items": [
+      {
+        "sku": "KT-2002",
+        "variant_id": null,
+        "name": "Everyday Nonstick Skillet 10\"",
+        "qty": 1,
+        "unit_price": 44
+      },
+      {
+        "sku": "KT-3002",
+        "variant_id": null,
+        "name": "Paring Knife 3.5\"",
+        "qty": 1,
+        "unit_price": 29
+      }
+    ],
+    "subtotal": 73,
+    "shipping": 6.95,
+    "heavy_item_surcharge": 0,
+    "total": 79.95,
+    "status": "delivered",
+    "carrier": "USPS",
+    "tracking": "TKP080924261",
+    "placed_at": "2026-09-09",
+    "shipped_at": "2026-09-10",
+    "estimated_delivery": "2026-09-14",
+    "delivered_at": "2026-09-14",
+    "note": null
+  },
+  {
+    "id": "TK-10220",
+    "customer_first_name": "Jules",
+    "ship_to_state": "MN",
+    "items": [
+      {
+        "sku": "KT-5003",
+        "variant_id": null,
+        "name": "Double-Wall French Press 1L",
+        "qty": 1,
+        "unit_price": 38
+      },
+      {
+        "sku": "KT-5006",
+        "variant_id": "KT-5006-BLK",
+        "name": "Compact Espresso Machine",
+        "qty": 2,
+        "unit_price": 249
+      }
+    ],
+    "subtotal": 536,
+    "shipping": 0,
+    "heavy_item_surcharge": 0,
+    "total": 536,
+    "status": "delivered",
+    "carrier": "FedEx",
+    "tracking": "TKF080932180",
+    "placed_at": "2026-09-09",
+    "shipped_at": "2026-09-10",
+    "estimated_delivery": "2026-09-14",
+    "delivered_at": "2026-09-14",
+    "note": null
+  },
+  {
+    "id": "TK-10221",
+    "customer_first_name": "Priya",
+    "ship_to_state": "WA",
+    "items": [
+      {
+        "sku": "KT-3005",
+        "variant_id": null,
+        "name": "Adjustable Mandoline Slicer",
+        "qty": 1,
+        "unit_price": 39
+      }
+    ],
+    "subtotal": 39,
+    "shipping": 6.95,
+    "heavy_item_surcharge": 0,
+    "total": 45.95,
+    "status": "delivered",
+    "carrier": "USPS",
+    "tracking": "TKP080940099",
+    "placed_at": "2026-09-06",
+    "shipped_at": "2026-09-07",
+    "estimated_delivery": "2026-09-11",
+    "delivered_at": "2026-09-11",
+    "note": null
+  },
+  {
+    "id": "TK-10222",
+    "customer_first_name": "Luca",
+    "ship_to_state": "GA",
+    "items": [
+      {
+        "sku": "KT-4005",
+        "variant_id": "KT-4005-BLK",
+        "name": "Vacuum-Seal Coffee & Dry Goods Canister",
+        "qty": 1,
+        "unit_price": 32
+      },
+      {
+        "sku": "KT-2001",
+        "variant_id": null,
+        "name": "Everyday Nonstick Skillet 8\"",
+        "qty": 1,
+        "unit_price": 34
+      }
+    ],
+    "subtotal": 66,
+    "shipping": 6.95,
+    "heavy_item_surcharge": 0,
+    "total": 72.95,
+    "status": "delivered",
+    "carrier": "UPS",
+    "tracking": "TKU080948018",
+    "placed_at": "2026-09-11",
+    "shipped_at": "2026-09-12",
+    "estimated_delivery": "2026-09-16",
+    "delivered_at": "2026-09-16",
+    "note": null
+  },
+  {
+    "id": "TK-10223",
+    "customer_first_name": "Beth",
+    "ship_to_state": "OH",
+    "items": [
+      {
+        "sku": "KT-1002",
+        "variant_id": "KT-1002-CRM",
+        "name": "Wide-Slot 2-Slice Toaster",
+        "qty": 1,
+        "unit_price": 49
+      }
+    ],
+    "subtotal": 49,
+    "shipping": 6.95,
+    "heavy_item_surcharge": 0,
+    "total": 55.95,
+    "status": "processing",
+    "carrier": null,
+    "tracking": null,
+    "placed_at": "2026-09-20",
+    "shipped_at": null,
+    "estimated_delivery": null,
+    "delivered_at": null,
+    "note": null
+  },
+  {
+    "id": "TK-10224",
+    "customer_first_name": "Nadia",
+    "ship_to_state": "GA",
+    "items": [
+      {
+        "sku": "KT-5003",
+        "variant_id": null,
+        "name": "Double-Wall French Press 1L",
+        "qty": 1,
+        "unit_price": 38
+      }
+    ],
+    "subtotal": 38,
+    "shipping": 6.95,
+    "heavy_item_surcharge": 0,
+    "total": 44.95,
+    "status": "delivered",
+    "carrier": "USPS",
+    "tracking": "TKP080963856",
+    "placed_at": "2026-09-14",
+    "shipped_at": "2026-09-15",
+    "estimated_delivery": "2026-09-19",
+    "delivered_at": "2026-09-19",
+    "note": null
+  },
+  {
+    "id": "TK-10225",
+    "customer_first_name": "Victor",
+    "ship_to_state": "GA",
+    "items": [
+      {
+        "sku": "KT-5006",
+        "variant_id": "KT-5006-STL",
+        "name": "Compact Espresso Machine",
+        "qty": 1,
+        "unit_price": 249
+      }
+    ],
+    "subtotal": 249,
+    "shipping": 0,
+    "heavy_item_surcharge": 0,
+    "total": 249,
+    "status": "shipped",
+    "carrier": "FedEx",
+    "tracking": "TKF080971775",
+    "placed_at": "2026-09-15",
+    "shipped_at": "2026-09-16",
+    "estimated_delivery": "2026-09-20",
+    "delivered_at": null,
+    "note": "Payment processor shows one capture plus one authorization hold that will drop off."
+  },
+  {
+    "id": "TK-10226",
+    "customer_first_name": "Harper",
+    "ship_to_state": "GA",
+    "items": [
+      {
+        "sku": "KT-5006",
+        "variant_id": "KT-5006-STL",
+        "name": "Compact Espresso Machine",
+        "qty": 1,
+        "unit_price": 249
+      }
+    ],
+    "subtotal": 249,
+    "shipping": 0,
+    "heavy_item_surcharge": 0,
+    "total": 249,
+    "status": "shipped",
+    "carrier": "FedEx",
+    "tracking": "TKF080979694",
+    "placed_at": "2026-09-16",
+    "shipped_at": "2026-09-17",
+    "estimated_delivery": "2026-09-21",
+    "delivered_at": null,
+    "note": null
+  },
+  {
+    "id": "TK-10227",
+    "customer_first_name": "Omar",
+    "ship_to_state": "CO",
+    "items": [
+      {
+        "sku": "KT-3005",
+        "variant_id": null,
+        "name": "Adjustable Mandoline Slicer",
+        "qty": 2,
+        "unit_price": 39
+      }
+    ],
+    "subtotal": 78,
+    "shipping": 0,
+    "heavy_item_surcharge": 0,
+    "total": 78,
+    "status": "shipped",
+    "carrier": "FedEx",
+    "tracking": "TKF080987613",
+    "placed_at": "2026-09-17",
+    "shipped_at": "2026-09-18",
+    "estimated_delivery": "2026-09-22",
+    "delivered_at": null,
+    "note": null
+  },
+  {
+    "id": "TK-10228",
+    "customer_first_name": "Quinn",
+    "ship_to_state": "OH",
+    "items": [
+      {
+        "sku": "KT-3003",
+        "variant_id": null,
+        "name": "Serrated Bread Knife 9\"",
+        "qty": 1,
+        "unit_price": 49
+      }
+    ],
+    "subtotal": 49,
+    "shipping": 6.95,
+    "heavy_item_surcharge": 0,
+    "total": 55.95,
+    "status": "shipped",
+    "carrier": "USPS",
+    "tracking": "TKP080995532",
+    "placed_at": "2026-09-18",
+    "shipped_at": "2026-09-19",
+    "estimated_delivery": "2026-09-23",
+    "delivered_at": null,
+    "note": null
+  },
+  {
+    "id": "TK-10229",
+    "customer_first_name": "Quinn",
+    "ship_to_state": "FL",
+    "items": [
+      {
+        "sku": "KT-3005",
+        "variant_id": null,
+        "name": "Adjustable Mandoline Slicer",
+        "qty": 1,
+        "unit_price": 39
+      },
+      {
+        "sku": "KT-1002",
+        "variant_id": "KT-1002-BLK",
+        "name": "Wide-Slot 2-Slice Toaster",
+        "qty": 2,
+        "unit_price": 49
+      },
+      {
+        "sku": "KT-4004",
+        "variant_id": null,
+        "name": "Silicone Stretch Lids (6-Pack)",
+        "qty": 1,
+        "unit_price": 12
+      }
+    ],
+    "subtotal": 149,
+    "shipping": 0,
+    "heavy_item_surcharge": 0,
+    "total": 149,
+    "status": "processing",
+    "carrier": null,
+    "tracking": null,
+    "placed_at": "2026-09-19",
+    "shipped_at": null,
+    "estimated_delivery": null,
+    "delivered_at": null,
+    "note": null
+  },
+  {
+    "id": "TK-10230",
+    "customer_first_name": "Greta",
+    "ship_to_state": "IL",
+    "items": [
+      {
+        "sku": "KT-1005",
+        "variant_id": "KT-1005-WHT",
+        "name": "5-Speed Hand Mixer",
+        "qty": 1,
+        "unit_price": 45
+      },
+      {
+        "sku": "KT-4002",
+        "variant_id": null,
+        "name": "Airtight Pantry Canisters (Set of 3)",
+        "qty": 1,
+        "unit_price": 36
+      }
+    ],
+    "subtotal": 81,
+    "shipping": 0,
+    "heavy_item_surcharge": 0,
+    "total": 81,
+    "status": "processing",
+    "carrier": null,
+    "tracking": null,
+    "placed_at": "2026-09-20",
+    "shipped_at": null,
+    "estimated_delivery": null,
+    "delivered_at": null,
+    "note": null
+  }
+]
