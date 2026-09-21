@@ -21,7 +21,7 @@ The building blocks: model APIs, context, retrieval, and knowing whether any of 
 
 | # | Target | Build | Status |
 |---|---|---|---|
-| 01 | Sep 21 | **[Frontier APIs side by side](01-frontier-apis/)**<br>Same 10 messy customer emails to Claude, GPT and Gemini with one JSON schema; compare accuracy, latency, cost. | Shipped Sep 21 |
+| 01 | Sep 21 | **[Claude, GPT and Gemini side by side](01-frontier-apis/)**<br>Same 10 messy customer emails to Claude, GPT and Gemini with one JSON schema; compare accuracy, latency, cost. | Shipped Sep 21 |
 | 02 | Sep 23 | **[Context engineering: caching, long context, reasoning budgets](02-context-engineering/)**<br>Whole policy handbook and catalog in the prompt; 10 questions with caching on/off and reasoning low/high. | Planned |
 | 03 | Sep 25 | **[RAG support bot with pgvector](03-rag-pgvector/)**<br>Support bot over the store's help center and catalog that cites its sources; then add a reranker. | Planned |
 | 04 | Sep 27 | **[Evals for the support bot](04-evals/)**<br>20 test cases for the 03 bot with LLM-as-judge scoring, run against two models; find a regression. | Planned |
@@ -71,7 +71,7 @@ The order is deliberate. A few small systems get reused and hardened instead of 
 
 ```mermaid
 flowchart LR
-  s01[01 Frontier APIs] --> s14[14 Local models]
+  s01[01 Claude, GPT, Gemini] --> s14[14 Local models]
   s01 --> s15[15 Fine-tuning]
   s01 --> s17[17 Gateway]
   s03[03 RAG support bot] --> s04[04 Evals]

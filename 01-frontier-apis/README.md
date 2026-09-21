@@ -1,4 +1,4 @@
-# 01 · Frontier APIs side by side
+# 01 · Claude, GPT and Gemini side by side
 
 > **Status:** Shipped Sep 21 · **Target:** Mon Sep 21 · **Timebox:** 2 hours
 
