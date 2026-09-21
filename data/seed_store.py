@@ -284,16 +284,19 @@ ORDER = {o["id"]: o for o in ORDERS}
 LABEL_GUIDE = {
     "intent": {
         "order_status": "Where is my order / delivery timing.",
-        "return_or_exchange": "Wants to send something back that arrived as ordered.",
-        "product_defect": "Item arrived as ordered but is broken or faulty.",
-        "wrong_or_missing_item": "Box contents do not match the order.",
-        "cancel_or_change_order": "Wants to cancel or edit an order that has not shipped.",
-        "product_question": "Pre-sale or how-to question about a product.",
-        "billing_issue": "Charges, refunds, double billing.",
-        "other": "None of the above.",
+        "return_request": "Wants to send back something that arrived as ordered and works.",
+        "defect_warranty": "Item arrived as ordered but is faulty or has failed.",
+        "how_to": "Question about a product: how to use it, what it works with, when it is back in stock.",
+        "damaged_in_shipping": "Item or box arrived physically damaged by the carrier.",
+        "wrong_item": "Box contents do not match the order (wrong or missing item).",
+        "cancel_order": "Wants to cancel or change an order that has not shipped.",
+        "other": "None of the above, including billing disputes.",
     },
     "order_id": "The order id as the customer wrote it, normalised to TK-NNNNN. null if none is given. "
-                "Tracking numbers are not order ids. It may not match a real order (see order_id_valid).",
+                "Never invented. Tracking numbers are not order ids. It may not match a real order "
+                "(see label_meta.order_id_valid).",
+    "product_sku": "SKU of the one product the email is mainly about, from the catalog. For wrong_item, "
+                   "the product that was ordered. null if the email does not identify a product.",
     "sentiment": ["positive", "neutral", "negative"],
     "urgency": {
         "high": "Safety issue, money dispute, or a time window that closes within about a day.",
@@ -301,16 +304,17 @@ LABEL_GUIDE = {
         "low": "No time pressure.",
     },
     "suggested_action": {
-        "send_tracking_update": "", "start_return": "", "send_replacement": "", "issue_refund": "",
-        "cancel_or_edit_order": "", "answer_question": "",
-        "escalate_to_human": "Always wins when there is an injury, a safety risk, or a legal or chargeback threat.",
+        "send_tracking": "", "refund": "Includes starting a return for refund.", "replace": "",
+        "answer_question": "", "cancel": "Cancel or edit an unshipped order.",
+        "escalate": "Always wins when there is an injury, a safety risk, or a legal or chargeback threat.",
     },
+    "product_issue": "Short free text or null. Not labeled, not scored.",
     "primary_intent_rule": "When an email has two intents, label the one that needs an action from us; "
-                           "the other goes in secondary_intent (not scored in session 01).",
+                           "the other goes in label_meta.secondary_intent (not scored).",
 }
 
 
-def email(n, received, first_name, subject, body, *, intent, order_id, sentiment, urgency, action,
+def email(n, received, first_name, subject, body, *, intent, order_id, sku, sentiment, urgency, action,
           secondary_intent=None, skus=(), order_id_valid=None, actual_order_id=None, label_note=None):
     return {
         "id": f"EM-{n:03d}",
@@ -321,6 +325,7 @@ def email(n, received, first_name, subject, body, *, intent, order_id, sentiment
         "labels": {
             "intent": intent,
             "order_id": order_id,
+            "product_sku": sku,
             "sentiment": sentiment,
             "urgency": urgency,
             "suggested_action": action,
@@ -342,8 +347,8 @@ EMAILS = [
           "hi, i orderd the air fryer like 9 days ago (order 10207) and the tracking hasnt moved since "
           "last week?? it said it would be here by the 14th. can someone tell me whats going on. "
           "need it for my sons bday dinner on the 26th\n\nmarcus",
-          intent="order_status", order_id="TK-10207", sentiment="negative", urgency="medium",
-          action="send_tracking_update", skus=["KT-1004"], order_id_valid=True, actual_order_id="TK-10207",
+          intent="order_status", order_id="TK-10207", sku="KT-1004", sentiment="negative", urgency="medium",
+          action="send_tracking", skus=["KT-1004"], order_id_valid=True, actual_order_id="TK-10207",
           label_note="Annoyed but civil; I called it negative. Deadline is 8 days out, so medium not high."),
 
     email(2, "2026-09-16T19:47:00-04:00", "Dana", "YOUR KETTLE BURNED MY HAND",
@@ -352,17 +357,17 @@ EMAILS = [
           "The latch has NEVER clicked shut properly since day one and I assumed that was just how it was. "
           "This thing is DANGEROUS and you are still selling it!!! I want to know what you are going to "
           "do about this. The pour over thing in the same order is fine, not that it matters.\n\nDana",
-          intent="product_defect", order_id="TK-10214", sentiment="negative", urgency="high",
-          action="escalate_to_human", skus=["KT-1001"], order_id_valid=True, actual_order_id="TK-10214",
-          label_note="Known issue KI-001. Injury means escalate beats send_replacement."),
+          intent="defect_warranty", order_id="TK-10214", sku="KT-1001", sentiment="negative", urgency="high",
+          action="escalate", skus=["KT-1001"], order_id_valid=True, actual_order_id="TK-10214",
+          label_note="Known issue KI-001. Injury means escalate beats replace."),
 
     email(3, "2026-09-17T10:05:00-04:00", "Walt", "Kettle lid question",
           "Hello,\n\nI bought one of your white electric kettles at the end of August. It works well but "
           "the lid doesn't seem to click closed, it just sort of rests there, and it lifted a bit when I "
           "poured this morning. Is that normal or did I get a dud? I don't have the order number handy, "
           "sorry, it would have been under Walt. Happy to send a photo if that helps.\n\nThanks,\nWalt",
-          intent="product_defect", order_id=None, sentiment="neutral", urgency="medium",
-          action="send_replacement", skus=["KT-1001"], order_id_valid=None, actual_order_id="TK-10209",
+          intent="defect_warranty", order_id=None, sku="KT-1001", sentiment="neutral", urgency="medium",
+          action="replace", skus=["KT-1001"], order_id_valid=None, actual_order_id="TK-10209",
           label_note="Same defect as EM-002, polite, no order id, no injury. Medium because the fault is a "
                      "scald risk even though he is calm. Arguable: answer_question."),
 
@@ -372,8 +377,8 @@ EMAILS = [
           "Bit annoying as I bought it specifically because the 8 I already have is too small. "
           "Can you send the right one? Do I need to post this one back?\n\nIngrid\n\n"
           "> Your order has been delivered. Track your package: ...",
-          intent="wrong_or_missing_item", order_id="TK-10219", sentiment="negative", urgency="medium",
-          action="send_replacement", skus=["KT-2002", "KT-2001"], order_id_valid=True,
+          intent="wrong_item", order_id="TK-10219", sku="KT-2002", sentiment="negative", urgency="medium",
+          action="replace", skus=["KT-2002", "KT-2001"], order_id_valid=True,
           actual_order_id="TK-10219",
           label_note="Order id appears only in the subject line. Mildly negative; arguable: neutral."),
 
@@ -382,17 +387,17 @@ EMAILS = [
           "now :) Two q's: 1) we just moved and the new place has an induction hob. will the 10 inch "
           "nonstick skillet work on it? the wok does which is great. 2) the burr grinder says sold out, "
           "any idea when its back? want to get it for my partner's birthday in november. thanks!!\nNoor x",
-          intent="product_question", order_id=None, sentiment="positive", urgency="low",
+          intent="how_to", order_id=None, sku="KT-2002", sentiment="positive", urgency="low",
           action="answer_question", skus=["KT-2002", "KT-5001", "KT-2005"], order_id_valid=None,
           actual_order_id=None,
-          label_note="Answers live in products.json: KT-2002 is not induction compatible; KT-5001 restocks 2026-10-12."),
+          label_note="Two products asked about; product_sku is the first (the skillet). Arguable. Answers live in products.json: KT-2002 is not induction compatible; KT-5001 restocks 2026-10-12."),
 
     email(6, "2026-09-20T16:52:00-04:00", "Beth", "change my order pls!!",
           "Hi i JUST placed an order like 10 min ago for the toaster and i clicked cream by accident, "
           "i wanted the black one to match my kettle. order number is TK-10232. can you switch it before "
           "it ships?? if you cant switch it then just cancel it and ill reorder. thanks so much\nBeth",
-          intent="cancel_or_change_order", order_id="TK-10232", sentiment="neutral", urgency="high",
-          action="cancel_or_edit_order", skus=["KT-1002"], order_id_valid=False, actual_order_id="TK-10223",
+          intent="cancel_order", order_id="TK-10232", sku="KT-1002", sentiment="neutral", urgency="high",
+          action="cancel", skus=["KT-1002"], order_id_valid=False, actual_order_id="TK-10223",
           label_note="She transposed two digits: TK-10232 does not exist, her order is TK-10223. The label is "
                      "what she wrote, because the model only sees the email. High because it must happen before shipping."),
 
@@ -402,8 +407,8 @@ EMAILS = [
           "I need to send it back. How does that work? Also I noticed I was charged an extra $15 on top "
           "of the price that I don't remember agreeing to, what was that for and do I get it back too?\n\n"
           "Regards\nSam",
-          intent="return_or_exchange", order_id="TK-10211", sentiment="neutral", urgency="low",
-          action="start_return", secondary_intent="billing_issue", skus=["KT-2004"], order_id_valid=True,
+          intent="return_request", order_id="TK-10211", sku="KT-2004", sentiment="neutral", urgency="low",
+          action="refund", secondary_intent="other", skus=["KT-2004"], order_id_valid=True,
           actual_order_id="TK-10211",
           label_note="Two intents. Return is primary (it needs an action); the $15 is the heavy-item surcharge."),
 
@@ -416,8 +421,8 @@ EMAILS = [
           "1 x Everyday Cookware Bundle (3-Piece)   $119.00\n"
           f"Shipped via {lena['carrier']}, tracking {lena['tracking']}\n\n"
           "can you send the saucepan? thx\n\nSent from my iPhone",
-          intent="wrong_or_missing_item", order_id="TK-10217", sentiment="neutral", urgency="medium",
-          action="send_replacement", skus=["KT-2006", "KT-2003"], order_id_valid=True,
+          intent="wrong_item", order_id="TK-10217", sku="KT-2006", sentiment="neutral", urgency="medium",
+          action="replace", skus=["KT-2006", "KT-2003"], order_id_valid=True,
           actual_order_id="TK-10217",
           label_note="Tracking number sits next to the order id as a distractor."),
 
@@ -426,18 +431,19 @@ EMAILS = [
           "$249 from Tom's Kitchen. That is nearly five hundred dollars. I have emailed once already and "
           "heard nothing. If the second charge is not reversed by end of day I am disputing both with my "
           "bank and you can have the machine back.\n\nVictor",
-          intent="billing_issue", order_id="TK-10225", sentiment="negative", urgency="high",
-          action="escalate_to_human", skus=["KT-5006"], order_id_valid=True, actual_order_id="TK-10225",
-          label_note="Chargeback threat means escalate beats issue_refund. The second charge is really an "
+          intent="other", order_id="TK-10225", sku="KT-5006", sentiment="negative", urgency="high",
+          action="escalate", skus=["KT-5006"], order_id_valid=True, actual_order_id="TK-10225",
+          label_note="Billing has no intent of its own in this schema, so other. Chargeback threat means escalate beats refund. The second charge is really an "
                      "authorization hold (see order note), which the model cannot know."),
 
     email(10, "2026-09-18T18:03:00-04:00", "Priya", "my order",
           "Hi, I got my package last week and it's not really what I expected to be honest. "
           "What are my options?\nThanks, Priya",
-          intent="return_or_exchange", order_id=None, sentiment="neutral", urgency="low",
-          action="start_return", skus=[], order_id_valid=None, actual_order_id="TK-10221",
+          intent="return_request", order_id=None, sku=None, sentiment="neutral", urgency="low",
+          action="answer_question", skus=[], order_id_valid=None, actual_order_id="TK-10221",
           label_note="Deliberately vague: no product, no order id, no stated problem. The most arguable label "
-                     "in the set. Alternatives: intent other; action answer_question."),
+                     "in the set. We have to ask what she bought before anything else, hence answer_question. "
+                     "Alternative: intent other."),
 ]
 
 

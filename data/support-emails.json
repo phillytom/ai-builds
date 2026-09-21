@@ -2,15 +2,16 @@
   "label_guide": {
     "intent": {
       "order_status": "Where is my order / delivery timing.",
-      "return_or_exchange": "Wants to send something back that arrived as ordered.",
-      "product_defect": "Item arrived as ordered but is broken or faulty.",
-      "wrong_or_missing_item": "Box contents do not match the order.",
-      "cancel_or_change_order": "Wants to cancel or edit an order that has not shipped.",
-      "product_question": "Pre-sale or how-to question about a product.",
-      "billing_issue": "Charges, refunds, double billing.",
-      "other": "None of the above."
+      "return_request": "Wants to send back something that arrived as ordered and works.",
+      "defect_warranty": "Item arrived as ordered but is faulty or has failed.",
+      "how_to": "Question about a product: how to use it, what it works with, when it is back in stock.",
+      "damaged_in_shipping": "Item or box arrived physically damaged by the carrier.",
+      "wrong_item": "Box contents do not match the order (wrong or missing item).",
+      "cancel_order": "Wants to cancel or change an order that has not shipped.",
+      "other": "None of the above, including billing disputes."
     },
-    "order_id": "The order id as the customer wrote it, normalised to TK-NNNNN. null if none is given. Tracking numbers are not order ids. It may not match a real order (see order_id_valid).",
+    "order_id": "The order id as the customer wrote it, normalised to TK-NNNNN. null if none is given. Never invented. Tracking numbers are not order ids. It may not match a real order (see label_meta.order_id_valid).",
+    "product_sku": "SKU of the one product the email is mainly about, from the catalog. For wrong_item, the product that was ordered. null if the email does not identify a product.",
     "sentiment": [
       "positive",
       "neutral",
@@ -22,15 +23,15 @@
       "low": "No time pressure."
     },
     "suggested_action": {
-      "send_tracking_update": "",
-      "start_return": "",
-      "send_replacement": "",
-      "issue_refund": "",
-      "cancel_or_edit_order": "",
+      "send_tracking": "",
+      "refund": "Includes starting a return for refund.",
+      "replace": "",
       "answer_question": "",
-      "escalate_to_human": "Always wins when there is an injury, a safety risk, or a legal or chargeback threat."
+      "cancel": "Cancel or edit an unshipped order.",
+      "escalate": "Always wins when there is an injury, a safety risk, or a legal or chargeback threat."
     },
-    "primary_intent_rule": "When an email has two intents, label the one that needs an action from us; the other goes in secondary_intent (not scored in session 01)."
+    "product_issue": "Short free text or null. Not labeled, not scored.",
+    "primary_intent_rule": "When an email has two intents, label the one that needs an action from us; the other goes in label_meta.secondary_intent (not scored)."
   },
   "emails": [
     {
@@ -42,9 +43,10 @@
       "labels": {
         "intent": "order_status",
         "order_id": "TK-10207",
+        "product_sku": "KT-1004",
         "sentiment": "negative",
         "urgency": "medium",
-        "suggested_action": "send_tracking_update"
+        "suggested_action": "send_tracking"
       },
       "label_meta": {
         "secondary_intent": null,
@@ -63,11 +65,12 @@
       "subject": "YOUR KETTLE BURNED MY HAND",
       "body": "I am FURIOUS. The lid on the red kettle I bought from you (TK10214) FLEW OPEN while I was pouring and boiling water went all over my hand. I had it under cold water for 20 minutes. The latch has NEVER clicked shut properly since day one and I assumed that was just how it was. This thing is DANGEROUS and you are still selling it!!! I want to know what you are going to do about this. The pour over thing in the same order is fine, not that it matters.\n\nDana",
       "labels": {
-        "intent": "product_defect",
+        "intent": "defect_warranty",
         "order_id": "TK-10214",
+        "product_sku": "KT-1001",
         "sentiment": "negative",
         "urgency": "high",
-        "suggested_action": "escalate_to_human"
+        "suggested_action": "escalate"
       },
       "label_meta": {
         "secondary_intent": null,
@@ -76,7 +79,7 @@
         ],
         "order_id_valid": true,
         "actual_order_id": "TK-10214",
-        "note": "Known issue KI-001. Injury means escalate beats send_replacement."
+        "note": "Known issue KI-001. Injury means escalate beats replace."
       }
     },
     {
@@ -86,11 +89,12 @@
       "subject": "Kettle lid question",
       "body": "Hello,\n\nI bought one of your white electric kettles at the end of August. It works well but the lid doesn't seem to click closed, it just sort of rests there, and it lifted a bit when I poured this morning. Is that normal or did I get a dud? I don't have the order number handy, sorry, it would have been under Walt. Happy to send a photo if that helps.\n\nThanks,\nWalt",
       "labels": {
-        "intent": "product_defect",
+        "intent": "defect_warranty",
         "order_id": null,
+        "product_sku": "KT-1001",
         "sentiment": "neutral",
         "urgency": "medium",
-        "suggested_action": "send_replacement"
+        "suggested_action": "replace"
       },
       "label_meta": {
         "secondary_intent": null,
@@ -109,11 +113,12 @@
       "subject": "Re: Your Tom's Kitchen order TK-10219 has been delivered",
       "body": "Hi there - box arrived Monday, thank you. The little paring knife is great. But the skillet in the box is the 8 inch and I definitely ordered the 10 (it says 10\" on the packing slip too!). Bit annoying as I bought it specifically because the 8 I already have is too small. Can you send the right one? Do I need to post this one back?\n\nIngrid\n\n> Your order has been delivered. Track your package: ...",
       "labels": {
-        "intent": "wrong_or_missing_item",
+        "intent": "wrong_item",
         "order_id": "TK-10219",
+        "product_sku": "KT-2002",
         "sentiment": "negative",
         "urgency": "medium",
-        "suggested_action": "send_replacement"
+        "suggested_action": "replace"
       },
       "label_meta": {
         "secondary_intent": null,
@@ -133,8 +138,9 @@
       "subject": "couple of questions!",
       "body": "Hiya! First off I LOVE the wok I got from you last month, it's basically the only pan I use now :) Two q's: 1) we just moved and the new place has an induction hob. will the 10 inch nonstick skillet work on it? the wok does which is great. 2) the burr grinder says sold out, any idea when its back? want to get it for my partner's birthday in november. thanks!!\nNoor x",
       "labels": {
-        "intent": "product_question",
+        "intent": "how_to",
         "order_id": null,
+        "product_sku": "KT-2002",
         "sentiment": "positive",
         "urgency": "low",
         "suggested_action": "answer_question"
@@ -148,7 +154,7 @@
         ],
         "order_id_valid": null,
         "actual_order_id": null,
-        "note": "Answers live in products.json: KT-2002 is not induction compatible; KT-5001 restocks 2026-10-12."
+        "note": "Two products asked about; product_sku is the first (the skillet). Arguable. Answers live in products.json: KT-2002 is not induction compatible; KT-5001 restocks 2026-10-12."
       }
     },
     {
@@ -158,11 +164,12 @@
       "subject": "change my order pls!!",
       "body": "Hi i JUST placed an order like 10 min ago for the toaster and i clicked cream by accident, i wanted the black one to match my kettle. order number is TK-10232. can you switch it before it ships?? if you cant switch it then just cancel it and ill reorder. thanks so much\nBeth",
       "labels": {
-        "intent": "cancel_or_change_order",
+        "intent": "cancel_order",
         "order_id": "TK-10232",
+        "product_sku": "KT-1002",
         "sentiment": "neutral",
         "urgency": "high",
-        "suggested_action": "cancel_or_edit_order"
+        "suggested_action": "cancel"
       },
       "label_meta": {
         "secondary_intent": null,
@@ -181,14 +188,15 @@
       "subject": "dutch oven",
       "body": "Hello, I received the blue dutch oven (order #TK 10211). It's lovely but honestly it is much heavier than I expected and with my wrists I can't lift it safely when it's full, so I think I need to send it back. How does that work? Also I noticed I was charged an extra $15 on top of the price that I don't remember agreeing to, what was that for and do I get it back too?\n\nRegards\nSam",
       "labels": {
-        "intent": "return_or_exchange",
+        "intent": "return_request",
         "order_id": "TK-10211",
+        "product_sku": "KT-2004",
         "sentiment": "neutral",
         "urgency": "low",
-        "suggested_action": "start_return"
+        "suggested_action": "refund"
       },
       "label_meta": {
-        "secondary_intent": "billing_issue",
+        "secondary_intent": "other",
         "skus": [
           "KT-2004"
         ],
@@ -204,11 +212,12 @@
       "subject": "Fwd: Order confirmation",
       "body": "hi - something's missing from my cookware bundle. got the two frying pans but no saucepan, and there was no second box. pasting my confirmation below\n\n---------- Forwarded message ---------\nThanks for your order, Lena!\nOrder: TK-10217   Placed: 2026-09-07\n1 x Everyday Cookware Bundle (3-Piece)   $119.00\nShipped via UPS, tracking TKU080908423\n\ncan you send the saucepan? thx\n\nSent from my iPhone",
       "labels": {
-        "intent": "wrong_or_missing_item",
+        "intent": "wrong_item",
         "order_id": "TK-10217",
+        "product_sku": "KT-2006",
         "sentiment": "neutral",
         "urgency": "medium",
-        "suggested_action": "send_replacement"
+        "suggested_action": "replace"
       },
       "label_meta": {
         "secondary_intent": null,
@@ -228,11 +237,12 @@
       "subject": "CHARGED TWICE - fix this today",
       "body": "I ordered ONE espresso machine on the 15th (order 10225) and my card shows TWO charges of $249 from Tom's Kitchen. That is nearly five hundred dollars. I have emailed once already and heard nothing. If the second charge is not reversed by end of day I am disputing both with my bank and you can have the machine back.\n\nVictor",
       "labels": {
-        "intent": "billing_issue",
+        "intent": "other",
         "order_id": "TK-10225",
+        "product_sku": "KT-5006",
         "sentiment": "negative",
         "urgency": "high",
-        "suggested_action": "escalate_to_human"
+        "suggested_action": "escalate"
       },
       "label_meta": {
         "secondary_intent": null,
@@ -241,7 +251,7 @@
         ],
         "order_id_valid": true,
         "actual_order_id": "TK-10225",
-        "note": "Chargeback threat means escalate beats issue_refund. The second charge is really an authorization hold (see order note), which the model cannot know."
+        "note": "Billing has no intent of its own in this schema, so other. Chargeback threat means escalate beats refund. The second charge is really an authorization hold (see order note), which the model cannot know."
       }
     },
     {
@@ -251,18 +261,19 @@
       "subject": "my order",
       "body": "Hi, I got my package last week and it's not really what I expected to be honest. What are my options?\nThanks, Priya",
       "labels": {
-        "intent": "return_or_exchange",
+        "intent": "return_request",
         "order_id": null,
+        "product_sku": null,
         "sentiment": "neutral",
         "urgency": "low",
-        "suggested_action": "start_return"
+        "suggested_action": "answer_question"
       },
       "label_meta": {
         "secondary_intent": null,
         "skus": [],
         "order_id_valid": null,
         "actual_order_id": "TK-10221",
-        "note": "Deliberately vague: no product, no order id, no stated problem. The most arguable label in the set. Alternatives: intent other; action answer_question."
+        "note": "Deliberately vague: no product, no order id, no stated problem. The most arguable label in the set. We have to ask what she bought before anything else, hence answer_question. Alternative: intent other."
       }
     }
   ]
