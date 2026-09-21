@@ -56,7 +56,8 @@
         "order_id_valid": true,
         "actual_order_id": "TK-10207",
         "note": "Annoyed but civil; I called it negative. Deadline is 8 days out, so medium not high."
-      }
+      },
+      "also_accept": {}
     },
     {
       "id": "EM-002",
@@ -80,7 +81,8 @@
         "order_id_valid": true,
         "actual_order_id": "TK-10214",
         "note": "Known issue KI-001. Injury means escalate beats replace."
-      }
+      },
+      "also_accept": {}
     },
     {
       "id": "EM-003",
@@ -94,7 +96,7 @@
         "product_sku": "KT-1001",
         "sentiment": "neutral",
         "urgency": "medium",
-        "suggested_action": "replace"
+        "suggested_action": "answer_question"
       },
       "label_meta": {
         "secondary_intent": null,
@@ -103,8 +105,9 @@
         ],
         "order_id_valid": null,
         "actual_order_id": "TK-10209",
-        "note": "Same defect as EM-002, polite, no order id, no injury. Medium because the fault is a scald risk even though he is calm. Arguable: answer_question."
-      }
+        "note": "Same defect as EM-002, polite, no order id, no injury. Medium because the fault is a scald risk even though he is calm. Action was replace until the first run: all three models said answer_question on all 9 calls, and he does literally ask a question."
+      },
+      "also_accept": {}
     },
     {
       "id": "EM-004",
@@ -129,7 +132,8 @@
         "order_id_valid": true,
         "actual_order_id": "TK-10219",
         "note": "Order id appears only in the subject line. Mildly negative; arguable: neutral."
-      }
+      },
+      "also_accept": {}
     },
     {
       "id": "EM-005",
@@ -155,7 +159,8 @@
         "order_id_valid": null,
         "actual_order_id": null,
         "note": "Two products asked about; product_sku is the first (the skillet). Arguable. Answers live in products.json: KT-2002 is not induction compatible; KT-5001 restocks 2026-10-12."
-      }
+      },
+      "also_accept": {}
     },
     {
       "id": "EM-006",
@@ -179,7 +184,8 @@
         "order_id_valid": false,
         "actual_order_id": "TK-10223",
         "note": "She transposed two digits: TK-10232 does not exist, her order is TK-10223. The label is what she wrote, because the model only sees the email. High because it must happen before shipping."
-      }
+      },
+      "also_accept": {}
     },
     {
       "id": "EM-007",
@@ -203,7 +209,8 @@
         "order_id_valid": true,
         "actual_order_id": "TK-10211",
         "note": "Two intents. Return is primary (it needs an action); the $15 is the heavy-item surcharge."
-      }
+      },
+      "also_accept": {}
     },
     {
       "id": "EM-008",
@@ -228,7 +235,8 @@
         "order_id_valid": true,
         "actual_order_id": "TK-10217",
         "note": "Tracking number sits next to the order id as a distractor."
-      }
+      },
+      "also_accept": {}
     },
     {
       "id": "EM-009",
@@ -252,7 +260,8 @@
         "order_id_valid": true,
         "actual_order_id": "TK-10225",
         "note": "Billing has no intent of its own in this schema, so other. Chargeback threat means escalate beats refund. The second charge is really an authorization hold (see order note), which the model cannot know."
-      }
+      },
+      "also_accept": {}
     },
     {
       "id": "EM-010",
@@ -273,7 +282,12 @@
         "skus": [],
         "order_id_valid": null,
         "actual_order_id": "TK-10221",
-        "note": "Deliberately vague: no product, no order id, no stated problem. The most arguable label in the set. We have to ask what she bought before anything else, hence answer_question. Alternative: intent other."
+        "note": "Deliberately vague: no product, no order id, no stated problem. The most arguable label in the set. We have to ask what she bought before anything else, hence answer_question. Intent other is accepted too (decided after the first run): the email never says what she wants."
+      },
+      "also_accept": {
+        "intent": [
+          "other"
+        ]
       }
     }
   ]

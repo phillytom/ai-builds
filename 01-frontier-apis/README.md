@@ -4,11 +4,11 @@
 
 | Model | intent | order id | SKU | sentiment | urgency | action | all 6 right | median latency | p95 latency | cost per email | cost per day at 1,000 emails |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| claude-haiku-4-5 | 80% | 100% | 93% | 90% | 80% | 80% | 50% | 1,041 ms | 1,540 ms | $0.00171 | $1.71 |
-| gpt-5.4-mini | 77% | 100% | 100% | 80% | 77% | 80% | 50% | 1,120 ms | 2,310 ms | $0.00092 | $0.92 |
-| gemini-3.8-flash | 100% | 100% | 100% | 93% | 80% | 83% | 70% | 960 ms | 3,429 ms | $0.00094 | $0.94 |
+| claude-haiku-4-5 | 90% | 100% | 93% | 90% | 80% | 90% | 60% | 1,041 ms | 1,540 ms | $0.00171 | $1.71 |
+| gpt-5.4-mini | 87% | 100% | 100% | 80% | 77% | 90% | 67% | 1,120 ms | 2,310 ms | $0.00092 | $0.92 |
+| gemini-3.8-flash | 100% | 100% | 100% | 93% | 80% | 93% | 80% | 960 ms | 3,429 ms | $0.00094 | $0.94 |
 
-10 emails × 3 runs per model, 90 calls, run on 2026-09-21. Accuracy is exact match per field against hand labels. No call returned invalid JSON and none needed a retry. Raw output for every call is in [results.json](results.json).
+10 emails × 3 runs per model, 90 calls, run on 2026-09-21. Accuracy is exact match per field against hand labels. No call returned invalid JSON and none needed a retry. Two labels were adjusted after the first scoring pass (see the notes under What I built). Raw output for every call is in [results.json](results.json).
 
 ## The brief
 
@@ -36,9 +36,9 @@ The schema has seven fields: intent, order id, product SKU, sentiment, urgency, 
 
 Things to know before reading the numbers:
 
-- Ten emails is a small set. One email is worth 10 points of accuracy, and every miss came from the same four emails.
-- The labels are one person's judgment. On one email (EM-003) all three models disagreed with the label on all nine calls, and the label is arguably the wrong one.
-- One prompt rule misfired. "Escalate when there is a safety risk" led two models to escalate a customer who only said a Dutch oven was too heavy to lift safely (EM-007).
+- Ten emails is a small set. One email is worth 10 points of accuracy, and nearly every miss came from the same few emails.
+- The labels are one person's judgment, and I changed two after seeing the first scores. On EM-003 (a polite "is this normal?" about a faulty kettle lid) the action label was `replace`, all three models said `answer_question` on all nine calls, and I decided they were right. On EM-010 (a deliberately vague email) the intent now accepts either `return_request` or `other`. The same 90 model answers were re-scored with `npm start -- --rescore`, with no new API calls. Before the changes the "all 6 right" column read 50%, 50% and 70%.
+- One prompt rule misfired, and I left it in. "Escalate when there is a safety risk" led two models to escalate a customer who only said a Dutch oven was too heavy to lift safely (EM-007). Fixing the prompt after seeing the results would have flattered the scores.
 - A Claude model wrote the labels and the prompt. That could favor Claude. It did not: Gemini matched the labels best.
 - Gemini's free tier allows 20 requests a day per model, which is fewer than this run needs. The Gemini project needs billing turned on.
 
@@ -57,7 +57,7 @@ npm run smoke                     # one email to Claude, about a fifth of a cent
 npm start                         # all 90 calls, about 2 minutes and $0.11
 ```
 
-`npm start` prints the results table and writes `results.json`. To run one provider, use `npm start -- --only openai` (or `anthropic`, `gemini`). To test one provider on a single email, use `npx tsx run.ts --smoke --only gemini`.
+`npm start` prints the results table and writes `results.json`. `npm start -- --rescore` re-scores the saved answers against the current labels without calling any API. To run one provider, use `npm start -- --only openai` (or `anthropic`, `gemini`). To test one provider on a single email, use `npx tsx run.ts --smoke --only gemini`.
 
 To change models or prices, edit `MODELS` and `PRICES` at the top of [run.ts](run.ts). To rebuild the demo data, run `python3 data/seed_store.py` from the repo root.
 

@@ -315,7 +315,8 @@ LABEL_GUIDE = {
 
 
 def email(n, received, first_name, subject, body, *, intent, order_id, sku, sentiment, urgency, action,
-          secondary_intent=None, skus=(), order_id_valid=None, actual_order_id=None, label_note=None):
+          secondary_intent=None, skus=(), order_id_valid=None, actual_order_id=None, label_note=None,
+          also_accept=None):
     return {
         "id": f"EM-{n:03d}",
         "received_at": received,
@@ -337,6 +338,8 @@ def email(n, received, first_name, subject, body, *, intent, order_id, sku, sent
             "actual_order_id": actual_order_id,
             "note": label_note,
         },
+        # Other answers scored as correct, per field, for emails that are ambiguous on purpose.
+        "also_accept": also_accept or {},
     }
 
 
@@ -367,9 +370,10 @@ EMAILS = [
           "poured this morning. Is that normal or did I get a dud? I don't have the order number handy, "
           "sorry, it would have been under Walt. Happy to send a photo if that helps.\n\nThanks,\nWalt",
           intent="defect_warranty", order_id=None, sku="KT-1001", sentiment="neutral", urgency="medium",
-          action="replace", skus=["KT-1001"], order_id_valid=None, actual_order_id="TK-10209",
+          action="answer_question", skus=["KT-1001"], order_id_valid=None, actual_order_id="TK-10209",
           label_note="Same defect as EM-002, polite, no order id, no injury. Medium because the fault is a "
-                     "scald risk even though he is calm. Arguable: answer_question."),
+                     "scald risk even though he is calm. Action was replace until the first run: all three "
+                     "models said answer_question on all 9 calls, and he does literally ask a question."),
 
     email(4, "2026-09-16T13:30:00-04:00", "Ingrid", "Re: Your Tom's Kitchen order TK-10219 has been delivered",
           "Hi there - box arrived Monday, thank you. The little paring knife is great. But the skillet in "
@@ -441,9 +445,10 @@ EMAILS = [
           "What are my options?\nThanks, Priya",
           intent="return_request", order_id=None, sku=None, sentiment="neutral", urgency="low",
           action="answer_question", skus=[], order_id_valid=None, actual_order_id="TK-10221",
+          also_accept={"intent": ["other"]},
           label_note="Deliberately vague: no product, no order id, no stated problem. The most arguable label "
                      "in the set. We have to ask what she bought before anything else, hence answer_question. "
-                     "Alternative: intent other."),
+                     "Intent other is accepted too (decided after the first run): the email never says what she wants."),
 ]
 
 

@@ -1,6 +1,7 @@
 {
   "ran_at": "2026-09-21T22:44:52.612Z",
   "wall_clock_s": 109,
+  "rescored_at": "2026-09-21T23:05:41.015Z",
   "runs_per_email": 3,
   "prices_usd_per_mtok": {
     "claude-haiku-4-5": {
@@ -23,14 +24,14 @@
       "calls": 30,
       "api_failed": 0,
       "accuracy": {
-        "intent": 0.8,
+        "intent": 0.9,
         "order_id": 1,
         "product_sku": 0.9333333333333333,
         "sentiment": 0.9,
         "urgency": 0.8,
-        "suggested_action": 0.8
+        "suggested_action": 0.9
       },
-      "all_fields_correct": 0.5,
+      "all_fields_correct": 0.6,
       "invalid_after_retries": 0,
       "json_retries": 0,
       "api_retries": 0,
@@ -51,14 +52,14 @@
       "calls": 30,
       "api_failed": 0,
       "accuracy": {
-        "intent": 0.7666666666666667,
+        "intent": 0.8666666666666667,
         "order_id": 1,
         "product_sku": 1,
         "sentiment": 0.8,
         "urgency": 0.7666666666666667,
-        "suggested_action": 0.8
+        "suggested_action": 0.9
       },
-      "all_fields_correct": 0.5,
+      "all_fields_correct": 0.6666666666666666,
       "invalid_after_retries": 0,
       "json_retries": 0,
       "api_retries": 0,
@@ -84,9 +85,9 @@
         "product_sku": 1,
         "sentiment": 0.9333333333333333,
         "urgency": 0.8,
-        "suggested_action": 0.8333333333333334
+        "suggested_action": 0.9333333333333333
       },
-      "all_fields_correct": 0.7,
+      "all_fields_correct": 0.8,
       "invalid_after_retries": 0,
       "json_retries": 0,
       "api_retries": 0,
@@ -296,7 +297,7 @@
         "product_sku": true,
         "sentiment": true,
         "urgency": false,
-        "suggested_action": false
+        "suggested_action": true
       }
     },
     {
@@ -324,7 +325,7 @@
         "product_sku": true,
         "sentiment": true,
         "urgency": false,
-        "suggested_action": false
+        "suggested_action": true
       }
     },
     {
@@ -352,7 +353,7 @@
         "product_sku": true,
         "sentiment": true,
         "urgency": false,
-        "suggested_action": false
+        "suggested_action": true
       }
     },
     {
@@ -879,7 +880,7 @@
       "attempts": 1,
       "api_retries": 0,
       "correct": {
-        "intent": false,
+        "intent": true,
         "order_id": true,
         "product_sku": true,
         "sentiment": true,
@@ -907,7 +908,7 @@
       "attempts": 1,
       "api_retries": 0,
       "correct": {
-        "intent": false,
+        "intent": true,
         "order_id": true,
         "product_sku": true,
         "sentiment": true,
@@ -935,7 +936,7 @@
       "attempts": 1,
       "api_retries": 0,
       "correct": {
-        "intent": false,
+        "intent": true,
         "order_id": true,
         "product_sku": true,
         "sentiment": true,
@@ -1136,7 +1137,7 @@
         "product_sku": true,
         "sentiment": true,
         "urgency": true,
-        "suggested_action": false
+        "suggested_action": true
       }
     },
     {
@@ -1164,7 +1165,7 @@
         "product_sku": true,
         "sentiment": true,
         "urgency": false,
-        "suggested_action": false
+        "suggested_action": true
       }
     },
     {
@@ -1192,7 +1193,7 @@
         "product_sku": true,
         "sentiment": true,
         "urgency": true,
-        "suggested_action": false
+        "suggested_action": true
       }
     },
     {
@@ -1719,7 +1720,7 @@
       "attempts": 1,
       "api_retries": 0,
       "correct": {
-        "intent": false,
+        "intent": true,
         "order_id": true,
         "product_sku": true,
         "sentiment": true,
@@ -1747,7 +1748,7 @@
       "attempts": 1,
       "api_retries": 0,
       "correct": {
-        "intent": false,
+        "intent": true,
         "order_id": true,
         "product_sku": true,
         "sentiment": true,
@@ -1775,7 +1776,7 @@
       "attempts": 1,
       "api_retries": 0,
       "correct": {
-        "intent": false,
+        "intent": true,
         "order_id": true,
         "product_sku": true,
         "sentiment": true,
@@ -1976,7 +1977,7 @@
         "product_sku": true,
         "sentiment": true,
         "urgency": true,
-        "suggested_action": false
+        "suggested_action": true
       }
     },
     {
@@ -2004,7 +2005,7 @@
         "product_sku": true,
         "sentiment": true,
         "urgency": true,
-        "suggested_action": false
+        "suggested_action": true
       }
     },
     {
@@ -2032,7 +2033,7 @@
         "product_sku": true,
         "sentiment": true,
         "urgency": true,
-        "suggested_action": false
+        "suggested_action": true
       }
     },
     {

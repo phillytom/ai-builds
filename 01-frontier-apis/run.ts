@@ -2,6 +2,7 @@
 //   npm start                 all models
 //   npm start -- --only openai
 //   npm run smoke             Anthropic, one email, one call
+//   npm start -- --rescore    re-score the calls already in results.json against the current labels (no API calls)
 import { readFileSync, writeFileSync } from "node:fs";
 import { ThinkingLevel } from "@google/genai";
 import { classify, type Classification, type Email, type ModelOptions, type Provider, type Triage } from "./classify.ts";
@@ -23,7 +24,7 @@ const MODELS: { provider: Provider; model: string; opts?: ModelOptions }[] = [
 const RUNS = 3;
 const SCORED = ["intent", "order_id", "product_sku", "sentiment", "urgency", "suggested_action"] as const;
 type Field = (typeof SCORED)[number];
-type Labeled = Email & { labels: Pick<Triage, Field> };
+type Labeled = Email & { labels: Pick<Triage, Field>; also_accept: Partial<Record<Field, (string | null)[]>> };
 type Row = Classification & { provider: Provider; model: string; email_id: string; run: number; correct: Record<Field, boolean> };
 
 const args = process.argv.slice(2);
@@ -47,16 +48,21 @@ if (smoke) {
   process.exit(out.result ? 0 : 1);
 }
 
-const rows: Row[] = [];
+const score = (email: Labeled, result: Triage | null) =>
+  Object.fromEntries(
+    SCORED.map((f) => [f, result !== null && (result[f] === email.labels[f] || (email.also_accept[f] ?? []).includes(result[f]))]),
+  ) as Record<Field, boolean>;
+
+const rescore = args.includes("--rescore");
+const previous = rescore ? JSON.parse(readFileSync(new URL("./results.json", import.meta.url), "utf8")) : undefined;
+const rows: Row[] = (previous?.rows ?? []).map((r: Row) => ({ ...r, correct: score(emails.find((e) => e.id === r.email_id)!, r.result) }));
 const started = Date.now();
-for (const { provider, model, opts } of models) {
+for (const { provider, model, opts } of rescore ? [] : models) {
   for (const email of emails) {
     for (let run = 1; run <= RUNS; run++) {
       // sequential on purpose, so latency is not distorted by our own concurrency
       const out = await classify(provider, model, email, opts);
-      const correct = Object.fromEntries(
-        SCORED.map((f) => [f, out.result !== null && out.result[f] === email.labels[f]]),
-      ) as Record<Field, boolean>;
+      const correct = score(email, out.result);
       rows.push({ provider, model, email_id: email.id, run, ...out, correct });
       process.stderr.write(`${model} ${email.id} #${run} ${out.latency_ms}ms ${out.error ?? (SCORED.filter((f) => !correct[f]).join(",") || "ok")}\n`);
     }
@@ -92,7 +98,7 @@ const summary = models.map(({ provider, model }) => {
 
 writeFileSync(
   new URL("./results.json", import.meta.url),
-  JSON.stringify({ ran_at: new Date(started).toISOString(), wall_clock_s: Math.round((Date.now() - started) / 1000), runs_per_email: RUNS, prices_usd_per_mtok: PRICES, summary, rows }, null, 2) + "\n",
+  JSON.stringify({ ran_at: previous?.ran_at ?? new Date(started).toISOString(), wall_clock_s: previous?.wall_clock_s ?? Math.round((Date.now() - started) / 1000), ...(rescore ? { rescored_at: new Date().toISOString() } : {}), runs_per_email: RUNS, prices_usd_per_mtok: PRICES, summary, rows }, null, 2) + "\n",
 );
 
 const pc = (x: number) => `${Math.round(x * 100)}%`;
