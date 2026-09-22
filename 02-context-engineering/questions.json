@@ -1,0 +1,124 @@
+{
+  "note": "10 customer questions for session 02. Each answer key was worked out by hand from data/policies/ and data/catalog-export.csv. 'must' facts are needed for full marks; 'must_not' is a wrong claim that caps the score at 0. 'kind': lookup = one fact from one place, multi = policy plus catalog, math = arithmetic on top of that.",
+  "questions": [
+    {
+      "id": "Q01",
+      "kind": "math",
+      "question": "I bought the Everyday Cookware Bundle two weeks ago. I use the two frying pans but I've never used the 3 quart saucepan. Can I send back just the saucepan, and how much would I get back?",
+      "must": [
+        "Yes, one piece of a bundle can be returned (unused, within 30 days of delivery)",
+        "The saucepan's share of the bundle price is $51.25 (59 x 119 / 137)",
+        "A $7.95 return label fee is deducted for a change-of-mind return, so the refund is $43.30 (the fee is waived for Pantry Club Gold members)"
+      ],
+      "must_not": "Says the refund is the saucepan's full list price of $59, or that part of a bundle can't be returned",
+      "sources": ["returns 1.1", "returns 1.7", "returns 1.8", "catalog KT-2006, KT-2001, KT-2002, KT-2003"]
+    },
+    {
+      "id": "Q02",
+      "kind": "math",
+      "question": "How much would shipping be if I order the 9 quart enameled cast iron Dutch oven to my home in Honolulu? And can I get it in two days?",
+      "must": [
+        "Standard shipping is free because the item is over $75",
+        "A $20 heavy-item surcharge applies to this Dutch oven (KT-2027) and a $20 Alaska/Hawaii fee applies, so $40 in total",
+        "Expedited (2-day) shipping is not available to Hawaii"
+      ],
+      "must_not": "Says expedited shipping is available to Hawaii, or gives a total other than $40",
+      "sources": ["shipping 2.2", "shipping 2.3", "shipping 2.4", "catalog KT-2027"]
+    },
+    {
+      "id": "Q03",
+      "kind": "multi",
+      "question": "We have an induction hob. Which of your saucepans work on induction, can go in the dishwasher, and cost under $60?",
+      "must": [
+        "Tri-Ply Stainless Saucepan 1.5 Qt (KT-2016), $45",
+        "Tri-Ply Stainless Saucepan 2 Qt (KT-2017), $51",
+        "Tri-Ply Stainless Saucepan 3 Qt (KT-2003), $59"
+      ],
+      "must_not": "Includes a nonstick saucepan (not induction compatible) or the 4 Qt saucepan or saucier (over $60 even on sale)",
+      "sources": ["catalog: every saucepan and saucier row", "care 7.1, 7.2"]
+    },
+    {
+      "id": "Q04",
+      "kind": "multi",
+      "question": "I bought the 5 quart tri-ply sauté pan at full price about 10 days ago and now I see it's on sale. Can I get the difference back?",
+      "must": [
+        "No price adjustment, because the 5 Qt sauté pan (KT-2021) is marked final sale / clearance",
+        "Final sale items can't be returned either (so return-and-rebuy isn't possible)",
+        "It is still covered by its warranty (120 months)"
+      ],
+      "must_not": "Offers the $12.01 difference or suggests returning it and buying it again",
+      "sources": ["prices 4.2", "returns 1.4", "catalog KT-2021"]
+    },
+    {
+      "id": "Q05",
+      "kind": "math",
+      "question": "My stand mixer was delivered 9 days ago and I paid $349. I just noticed it's cheaper on your site now. Anything you can do?",
+      "must": [
+        "Yes: a price adjustment applies because the price dropped within 14 days of delivery and the mixer (KT-1010) isn't final sale",
+        "The sale price is $296.99, so the difference is $52.01",
+        "It goes back to the original payment method; the customer has to ask via chat or email with the order number (it's not automatic)"
+      ],
+      "must_not": "Says no price adjustments are offered, or gives a different amount",
+      "sources": ["prices 4.2", "catalog KT-1010"]
+    },
+    {
+      "id": "Q06",
+      "kind": "math",
+      "question": "I paid for the Nakiri knife with a $50 gift card and put the rest on my Visa. It arrived last week and I haven't used it. If I return it, where does the money go?",
+      "must": [
+        "Full item price of $119 is refundable (unused, within 30 days)",
+        "$50 comes back as a new e-gift card",
+        "The Visa gets $69 less the $7.95 label fee, so $61.05 (the fee comes off the card share first; no fee for Gold members)"
+      ],
+      "must_not": "Refunds everything to the Visa, or takes the label fee from the gift card share",
+      "sources": ["returns 1.1", "returns 1.7", "returns 1.9", "catalog KT-3010"]
+    },
+    {
+      "id": "Q07",
+      "kind": "lookup",
+      "question": "I'm moving to London next month. Can I use my Compact Espresso Machine there with a plug adapter? And can you ship my next order to my new address?",
+      "must": [
+        "No: the espresso machine is 120 V / 60 Hz only, and a plug adapter doesn't change voltage and will damage it",
+        "Using a voltage converter voids the warranty",
+        "Tom's Kitchen doesn't ship outside the US (no UK shipping)"
+      ],
+      "must_not": "Says the machine will work with an adapter or converter, or that UK shipping is possible",
+      "sources": ["warranty 3.3", "faq", "shipping 2.1", "catalog KT-5006"]
+    },
+    {
+      "id": "Q08",
+      "kind": "multi",
+      "question": "I ordered the engraved chef's knife as a gift, but it turns out my brother already has one. It's still in the box. Can I send it back?",
+      "must": [
+        "No: engraved / personalized items are final sale, even unopened",
+        "The warranty still covers defects"
+      ],
+      "must_not": "Says it can be returned because the catalog's final_sale column says no, or offers a return or exchange",
+      "sources": ["returns 1.4", "faq (engraving)", "catalog KT-3038 description"]
+    },
+    {
+      "id": "Q09",
+      "kind": "math",
+      "question": "I'm a Pantry Club Silver member. If I order just the Rasp Zester, what will shipping cost and how many points will I earn?",
+      "must": [
+        "Shipping is free: Silver members get free standard shipping with no minimum",
+        "The zester (KT-3022) is on sale for $12.99",
+        "Silver earns 1.25 points per $1, so 16 points (12.99 x 1.25 = 16.24, rounded down)"
+      ],
+      "must_not": "Charges $6.95 shipping, or uses 1 point per $1",
+      "sources": ["pantry 6.1", "pantry 6.3", "shipping 2.2", "catalog KT-3022"]
+    },
+    {
+      "id": "Q10",
+      "kind": "math",
+      "question": "This is my first order. I want the Everyday Cookware Bundle and the 8 inch chef's knife, using WELCOME10, shipped to Ohio. What will I pay before tax?",
+      "must": [
+        "WELCOME10 doesn't apply to bundles, so the bundle stays $119",
+        "The knife (KT-3001, $89) gets 10% off, an $8.90 discount, so $80.10",
+        "Shipping is free (subtotal over $75), so the total before tax is $199.10"
+      ],
+      "must_not": "Applies 10% to the bundle (giving $187.20) or adds $6.95 shipping",
+      "sources": ["prices 4.3", "prices 4.4", "shipping 2.2", "catalog KT-2006, KT-3001"]
+    }
+  ]
+}

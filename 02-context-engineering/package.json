@@ -1,0 +1,20 @@
+{
+  "name": "02-context-engineering",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "tokens": "tsx run.ts --tokens",
+    "smoke": "tsx run.ts --smoke",
+    "start": "tsx run.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.128.0",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.2",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
