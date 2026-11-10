@@ -23,7 +23,7 @@ The building blocks: model APIs, context, retrieval, and knowing whether any of 
 |---|---|---|---|
 | 01 | Sep 21 | **[Claude, GPT and Gemini side by side](01-frontier-apis/)**<br>Same 10 messy customer emails to Claude, GPT and Gemini with one JSON schema; compare accuracy, latency, cost. | Shipped Sep 21 |
 | 02 | Sep 23 | **[Context engineering: caching, long context, reasoning budgets](02-context-engineering/)**<br>Whole policy handbook and catalog in the prompt; 10 questions with caching on/off and reasoning low/high. | Shipped Sep 22 |
-| 03 | Sep 25 | **[RAG support bot with pgvector](03-rag-pgvector/)**<br>Support bot over the store's help center and catalog that cites its sources; then add a reranker. | Planned |
+| 03 | Sep 25 | **[RAG support bot with pgvector](03-rag-pgvector/)**<br>Support bot over the store's help center and catalog that cites its sources; then add a reranker. | Shipped Nov 10 |
 | 04 | Sep 27 | **[Evals for the support bot](04-evals/)**<br>20 test cases for the 03 bot with LLM-as-judge scoring, run against two models; find a regression. | Planned |
 | 05 | Sep 29 | **[Tracing and cost visibility](05-tracing/)**<br>Instrument the bot with Langfuse; inspect cost and latency per request; turn bad answers into eval cases. | Planned |
 

@@ -1,5 +1,5 @@
 {
-  "note": "Chunks a correct answer needs, per question in ../02-context-engineering/questions.json. Hand-labelled from the answer keys. Used to score retrieval (recall), not the answers.",
+  "note": "Chunks a correct answer needs, per question in ../02-context-engineering/questions.json. Hand-labelled from the answer keys. Q10 gained §4.3 after the first run: the bundle exclusion lives there, and §4.4 only points to it. Used to score retrieval (recall), not the answers.",
   "needs": {
     "Q01": ["§1.8", "§1.7", "KT-2006", "KT-2001", "KT-2002", "KT-2003"],
     "Q02": ["§2.2", "§2.3", "§2.4", "KT-2027"],
@@ -10,6 +10,6 @@
     "Q07": ["KT-5006", "§7.7", "§3.3", "§2.1"],
     "Q08": ["§1.4", "KT-3038"],
     "Q09": ["§6.1", "§6.3", "KT-3022"],
-    "Q10": ["§4.4", "KT-2006", "KT-3001", "§2.2"]
+    "Q10": ["§4.4", "§4.3", "KT-2006", "KT-3001", "§2.2"]
   }
 }

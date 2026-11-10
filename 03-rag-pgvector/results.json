@@ -1,0 +1,1363 @@
+{
+  "model": "claude-haiku-5-5",
+  "judge": "claude-haiku-4-5",
+  "embed_model": "gemini-embedding-001",
+  "run_at": "2026-11-10T16:20:53.676Z",
+  "wall_clock_s": 346,
+  "rows": [
+    {
+      "mode": "full",
+      "answer": "Yes. You can return just the 3 Qt saucepan (KT-2003) and keep the two skillets. Because it's unused and complete, the standard 30-day policy applies. The window counts from the delivery date in your tracking, so check that it arrived within the last 30 days.\n\n**Refund:** The bundle price is $119.00, and the three pieces list at $34 + $44 + $59 = $137. The saucepan's share is $59 × (119 ÷ 137) = **$51.25**, plus the sales tax charged on it.\n\n**Return label:** As a change-of-mind return, the label costs **$7.95**, deducted from the refund, so you'd get **$43.30** plus tax. Pantry Club Gold members get the label free.\n\nTo qualify, return it unused, with the lid and any inserts. Start the return from your order in your account to get a prepaid label. The refund goes to your original payment method within 3 business days of the return arriving, then 5–10 business days to appear.",
+      "stop_reason": "end_turn",
+      "retrieved": [],
+      "cited": [],
+      "usage": {
+        "input": 73,
+        "cache_read": 0,
+        "cache_write": 50727,
+        "output": 1608,
+        "embed": 0
+      },
+      "retrieval_ms": 0,
+      "total_ms": 8519,
+      "cost_usd": 0.007152175,
+      "question_id": "Q01",
+      "score": 2,
+      "judge_reason": "All required facts are present and correct. The answer confirms that a single piece of a bundle can be returned within 30 days (unused), correctly calculates the saucepan's bundle-adjusted refund amount as $51.25, and properly explains the $7.95 return label fee deduction resulting in $43.30 net refund (with waiver for Pantry Club Gold members). No forbidden claims are made.",
+      "judge_cost_usd": 0.001378
+    },
+    {
+      "mode": "full",
+      "answer": "Shipping to Honolulu would be **$40.00** for one KT-2027 9 Qt Enameled Cast Iron Dutch Oven ($249.00, any color):\n\n- **Standard shipping: $0.00**, because the $249.00 merchandise subtotal is over $75.\n- **Hawaii remote-delivery fee: $20.00** per order, charged even when standard shipping is free.\n- **Heavy-item surcharge: $20.00** per unit, which isn't reduced by promo codes or Pantry Club membership.\n\nTwo-day delivery isn't available. Expedited shipping can't be sent to Hawaii, and standard transit is 7–12 business days after the order ships. The Dutch oven also needs a street address, since heavy items can't ship to a PO box.",
+      "stop_reason": "end_turn",
+      "retrieved": [],
+      "cited": [],
+      "usage": {
+        "input": 54,
+        "cache_read": 50727,
+        "cache_write": 0,
+        "output": 1290,
+        "embed": 0
+      },
+      "retrieval_ms": 0,
+      "total_ms": 6717,
+      "cost_usd": 0.00115767,
+      "question_id": "Q02",
+      "score": 2,
+      "judge_reason": "All required facts are present and correct. The answer states standard shipping is free due to the item being over $75, correctly identifies both the $20 heavy-item surcharge and $20 Alaska/Hawaii fee for a $40 total, and clearly states that expedited 2-day shipping is not available to Hawaii. No forbidden claims are made.",
+      "judge_cost_usd": 0.001155
+    },
+    {
+      "mode": "full",
+      "answer": "Three saucepans meet all three conditions. All are tri-ply stainless steel, marked induction compatible and dishwasher safe, and in stock:\n\n- **KT-2016**, Tri-Ply Stainless Saucepan 1.5 Qt: **$45.00**\n- **KT-2017**, Tri-Ply Stainless Saucepan 2 Qt: **$51.00**\n- **KT-2003**, Tri-Ply Stainless Saucepan 3 Qt: **$59.00**\n\nThe Tri-Ply Stainless Saucepan 4 Qt (KT-2018) is also induction compatible and dishwasher safe, but its sale price is $63.99, so it's over your budget. It is also out of stock until 2026-11-08.",
+      "stop_reason": "end_turn",
+      "retrieved": [],
+      "cited": [],
+      "usage": {
+        "input": 44,
+        "cache_read": 50727,
+        "cache_write": 0,
+        "output": 961,
+        "embed": 0
+      },
+      "retrieval_ms": 0,
+      "total_ms": 4594,
+      "cost_usd": 0.0009921700000000001,
+      "question_id": "Q03",
+      "score": 2,
+      "judge_reason": "All three required saucepans are correctly identified with accurate SKUs, sizes, and prices. The answer appropriately excludes the 4 Qt saucepan as over budget and mentions it is out of stock, which does not constitute a forbidden claim since the answer does not recommend it. No nonstick products are included.",
+      "judge_cost_usd": 0.001199
+    },
+    {
+      "mode": "full",
+      "answer": "No, I can't refund the $12.01 difference. The 5 qt Tri-Ply Stainless Saute Pan (KT-2021) is marked final sale in our catalog, and price adjustments don't apply to final sale items, even if you paid full price. The list price is $124.00 and the sale price is $111.99.\n\nBecause it's final sale, you also can't return it for a change of mind. The exception is a manufacturing defect: if the pan fails under the 120-month warranty, contact support@tomskitchen.example with your order number, a description of the problem, and a photo or short video.\n\nIf your order shows a different SKU than KT-2021, tell me the SKU and I'll check whether the adjustment applies.",
+      "stop_reason": "end_turn",
+      "retrieved": [],
+      "cited": [],
+      "usage": {
+        "input": 54,
+        "cache_read": 50727,
+        "cache_write": 0,
+        "output": 641,
+        "embed": 0
+      },
+      "retrieval_ms": 0,
+      "total_ms": 3888,
+      "cost_usd": 0.00083317,
+      "question_id": "Q04",
+      "score": 2,
+      "judge_reason": "All required facts are present and correct: the answer clearly states no price adjustment for final sale items, confirms final sale items cannot be returned, and mentions the 120-month warranty coverage. The answer also appropriately avoids the forbidden claim of offering the $12.01 difference or suggesting a return-and-rebuy option.",
+      "judge_cost_usd": 0.00112
+    },
+    {
+      "mode": "full",
+      "answer": "The Stand Mixer 5 Qt (KT-1010, any color) is now $296.99, down from $349.00. Your delivery was 9 days ago, so you're inside the 14-day price adjustment window, which closes in 5 days. You'd be owed $52.01 ($349.00 minus $296.99), refunded to your original payment method.\n\nThis depends on two things:\n\n- **If you paid the $349.00 list price with no promo code or verified discount:** you qualify, provided the lower price is not a Kitchen Flash price. Our catalog doesn't show whether this price is a Kitchen Flash event, so support will need to confirm that.\n- **If you used a promo code or verified discount:** you don't qualify, because those can't be combined with a price adjustment.\n\nIf you qualify, send your order number through chat or email and ask for the adjustment. We don't adjust prices automatically, so please don't wait.",
+      "stop_reason": "end_turn",
+      "retrieved": [],
+      "cited": [],
+      "usage": {
+        "input": 52,
+        "cache_read": 50727,
+        "cache_write": 0,
+        "output": 1252,
+        "embed": 0
+      },
+      "retrieval_ms": 0,
+      "total_ms": 6218,
+      "cost_usd": 0.0011384700000000002,
+      "question_id": "Q05",
+      "score": 2,
+      "judge_reason": "The answer correctly identifies that a price adjustment applies (within 14 days, item not final sale), correctly calculates the $52.01 difference, and correctly states that the refund goes to the original payment method and requires the customer to contact via chat or email with the order number. However, the answer adds a conditional requirement about Kitchen Flash pricing and promo codes that is not mentioned in the required facts, which may create unnecessary confusion. The core required facts are all present and correct.",
+      "judge_cost_usd": 0.001325
+    },
+    {
+      "mode": "full",
+      "answer": "The Nakiri Knife 6.5\" (SKU KT-3010, $119.00, not final sale) can be returned under the 30-day standard policy because it's unused and you're within 30 days of delivery. The refund is the item price plus its sales tax. Original shipping isn't refunded.\n\nThe $7.95 return label fee is deducted from your refund, and the refund is split in the same proportions as your payment:\n\n- **Gift card share:** returned as a new e-gift card sent to the email on the order.\n- **Visa share:** returned to your card, with the $7.95 fee taken from this share first.\n\nIf you paid only the $119.00 knife price with no tax or shipping, you'd get a $50.00 e-gift card and $61.05 back to Visa ($69.00 minus $7.95). Tax and shipping change these amounts, so send your order total and delivery state for exact figures.\n\nRefunds are issued within 3 business days of the return reaching our warehouse. Visa refunds then take 5–10 business days to appear. Check your tracking for the exact delivery date, since the 30-day window runs from it.",
+      "stop_reason": "end_turn",
+      "retrieved": [],
+      "cited": [],
+      "usage": {
+        "input": 62,
+        "cache_read": 50727,
+        "cache_write": 0,
+        "output": 1825,
+        "embed": 0
+      },
+      "retrieval_ms": 0,
+      "total_ms": 9196,
+      "cost_usd": 0.0014259700000000004,
+      "question_id": "Q06",
+      "score": 2,
+      "judge_reason": "The answer correctly states the required facts: the full $119 item price is refundable for unused returns within 30 days, the $50 gift card portion returns as a new e-gift card, and the Visa receives $61.05 ($69 minus the $7.95 label fee deducted from the card share first). The answer also correctly avoids the forbidden claims. However, the answer introduces uncertainty about tax and shipping that isn't part of the customer's scenario and asks for clarification on figures when the required facts specify the exact amounts for the stated payment method.",
+      "judge_cost_usd": 0.001524
+    },
+    {
+      "mode": "full",
+      "answer": "The Compact Espresso Machine (KT-5006-STL and KT-5006-BLK) is built for 120 V, 60 Hz only, and London uses 230 V. A plug adapter only changes the plug shape, and it will damage the machine. A voltage converter or transformer would avoid that damage, but it voids the 24-month warranty. Buying a 230 V machine locally is the safer option.\n\nIf you haven't used it yet, it may be returnable under the standard 30-day policy, but only if it's unused and complete and within 30 days of delivery. The $7.95 return label fee is deducted from your refund. Once it has been plugged in and used, it can only be returned if faulty.\n\nWe can't ship your next order to London. We ship only within the 50 US states, Washington DC, Puerto Rico and APO/FPO/DPO addresses, and we don't ship to freight forwarders. Cookware, knives and storage work anywhere, so those are fine to use abroad.",
+      "stop_reason": "end_turn",
+      "retrieved": [],
+      "cited": [],
+      "usage": {
+        "input": 53,
+        "cache_read": 50727,
+        "cache_write": 0,
+        "output": 1059,
+        "embed": 0
+      },
+      "retrieval_ms": 0,
+      "total_ms": 6090,
+      "cost_usd": 0.0010420700000000002,
+      "question_id": "Q07",
+      "score": 2,
+      "judge_reason": "All three required facts are present and correct: the machine is 120V/60Hz only and a plug adapter will damage it; using a voltage converter voids the warranty; and Tom's Kitchen doesn't ship to the UK. No forbidden claims are made.",
+      "judge_cost_usd": 0.001096
+    },
+    {
+      "mode": "full",
+      "answer": "No, the Engraved Chef's Knife 8\" (KT-3038) can't be returned for a change of mind, even unused and still in the box. Engraved items are final sale (1.4), and the product description says so too, although the catalog's final-sale field reads \"no.\" Gift returns (1.11) don't override this.\n\nThe knife is still covered by its warranty. Forged knives carry a 10-year (120-month) warranty against defects (3.1, 3.5). If it arrives with a manufacturing defect, such as a cracked blade or a handle that separates from the tang, email support@tomskitchen.example with your order number, a description, and a photo or short video (3.6). We'd replace it or, if no equivalent exists, refund the price you paid.\n\nOtherwise, you could keep it, or give it to your brother, who may be able to use it. I can't offer a store credit or refund for this, since the policy doesn't allow it for engraved items.",
+      "stop_reason": "end_turn",
+      "retrieved": [],
+      "cited": [],
+      "usage": {
+        "input": 50,
+        "cache_read": 50727,
+        "cache_write": 0,
+        "output": 1307,
+        "embed": 0
+      },
+      "retrieval_ms": 0,
+      "total_ms": 7603,
+      "cost_usd": 0.00116577,
+      "question_id": "Q08",
+      "score": 0,
+      "judge_reason": "The answer correctly states that engraved items are final sale and cannot be returned for a change of mind, even unopened, and also correctly mentions the warranty covers defects. However, the answer makes the forbidden claim by explicitly referencing that 'the catalog's final-sale field reads \"no\"' as a point of discussion, which violates the instruction not to mention or rely on the catalog's final_sale column value.",
+      "judge_cost_usd": 0.001246
+    },
+    {
+      "mode": "full",
+      "answer": "Your Rasp Zester (KT-3022) is on sale for $12.99 (list $16.00). Silver membership gives you free standard shipping on every order with no minimum, so standard shipping costs $0.00. Expedited shipping is $14.95 and isn't free for Silver members.\n\nYou'd earn 16 points: $12.99 × 1.25 points per $1 = 16.24, rounded down to a whole point. Points are added when the order ships. Sales tax doesn't earn points.\n\nTwo things depend on your delivery address. If it's in Alaska, Hawaii or Puerto Rico, a flat $20 remote-delivery fee applies on top of shipping, and expedited isn't available there. Sales tax is calculated from your delivery address, and Delaware, Montana, New Hampshire and Oregon charge none.",
+      "stop_reason": "end_turn",
+      "retrieved": [],
+      "cited": [],
+      "usage": {
+        "input": 50,
+        "cache_read": 50727,
+        "cache_write": 0,
+        "output": 581,
+        "embed": 0
+      },
+      "retrieval_ms": 0,
+      "total_ms": 3108,
+      "cost_usd": 0.0008027700000000001,
+      "question_id": "Q09",
+      "score": 2,
+      "judge_reason": "Every required fact is present and correct. The answer states shipping is free for Silver members with no minimum, the zester price is $12.99, and the points calculation is correct at 16 points (12.99 × 1.25 = 16.24 rounded down). The forbidden claims are not made. The additional context about expedited shipping, remote areas, and tax is accurate extra detail.",
+      "judge_cost_usd": 0.001224
+    },
+    {
+      "mode": "full",
+      "answer": "Your pre-tax total is **$199.10** with standard shipping.\n\n- **Everyday Cookware Bundle (KT-2006):** $119.00. WELCOME10 doesn't apply to bundles, so no discount is taken off this item.\n- **8\" Chef's Knife (KT-3001):** $89.00, less 10% from WELCOME10 ($8.90), = $80.10.\n- **Merchandise subtotal:** $199.10.\n- **Shipping:** Standard shipping is free because the subtotal is $75 or more. Expedited would add $14.95.\n- **Fees:** Ohio has no remote-delivery fee, and neither item has a heavy-item surcharge.\n\nSales tax is added on top based on your delivery address. The handbook doesn't include Ohio's tax rate, so I can't give you the tax amount.",
+      "stop_reason": "end_turn",
+      "retrieved": [],
+      "cited": [],
+      "usage": {
+        "input": 66,
+        "cache_read": 50727,
+        "cache_write": 0,
+        "output": 1102,
+        "embed": 0
+      },
+      "retrieval_ms": 0,
+      "total_ms": 5064,
+      "cost_usd": 0.00106487,
+      "question_id": "Q10",
+      "score": 2,
+      "judge_reason": "Every required fact is present and correct: WELCOME10 doesn't apply to bundles ($119 correct), the 8-inch chef's knife gets 10% off for $80.10 (correct discount of $8.90), shipping is free due to subtotal over $75, and the total before tax is $199.10. The answer also correctly avoids the forbidden claims about applying 10% to the bundle or adding $6.95 shipping.",
+      "judge_cost_usd": 0.001309
+    },
+    {
+      "mode": "vector-8",
+      "answer": "Yes, you can return just the saucepan. Bundle pieces can be returned individually [§1.8]. Because it's unused and complete and you're within 30 days of delivery, the standard return applies, and you can choose a refund to your original payment method [§1.1][§1.2]. If you were delivered two weeks ago, about 16 days remain on that window [§1.1].\n\nThe refund is the saucepan's list price × (bundle price paid ÷ combined list prices of all three pieces), rounded to the nearest cent [§1.8]. I can't calculate the amount because the sources don't give the saucepan's list price or the three pieces' combined list price. The bundle's listed price is $119.00 [KT-2006], but the component prices aren't shown. You also haven't told me what you paid. Check the piece prices in the catalog (KT-2001, KT-2002, KT-2003) and your order total.\n\nChanging your mind costs a $7.95 return label fee, deducted from the refund. Pantry Club Gold members get the label free [§1.7]. Original shipping is not refunded [§1.7].",
+      "stop_reason": "end_turn",
+      "retrieved": [
+        "§1.8",
+        "§1.1",
+        "faq-returns-refunds-and-money",
+        "§1.2",
+        "§1.5",
+        "§1.7",
+        "KT-2006",
+        "§2.3"
+      ],
+      "cited": [
+        "§1.8",
+        "§1.1",
+        "§1.2",
+        "KT-2006",
+        "§1.7"
+      ],
+      "usage": {
+        "input": 3036,
+        "cache_read": 0,
+        "cache_write": 0,
+        "output": 1660,
+        "embed": 46
+      },
+      "retrieval_ms": 619,
+      "total_ms": 8464,
+      "cost_usd": 0.0011405,
+      "question_id": "Q01",
+      "score": 1,
+      "judge_reason": "The answer correctly states that bundle pieces can be returned individually and explains the calculation method for the refund amount. However, it fails to provide the actual refund amount ($43.30) that is a required fact. While the answer acknowledges missing component prices, it doesn't calculate the refund using the provided information (saucepan list price $59, bundle price $119, combined list price $137). The answer does correctly mention the $7.95 return label fee and that it's waived for Pantry Club Gold members.",
+      "judge_cost_usd": 0.001504
+    },
+    {
+      "mode": "vector-8",
+      "answer": "Shipping to Honolulu for one KT-2027 9 Qt Dutch oven costs $40 plus the standard shipping charge. That includes a $20.00 heavy-item surcharge per unit, which applies even when shipping is free and isn't reduced by promo codes [KT-2027] [§2.3], and a flat $20 remote-delivery fee for Hawaii, charged on top of standard shipping and surcharges [§2.4]. The sources don't state the standard shipping charge, so checkout will show the full amount. If standard shipping is free, your total is $40.\n\nTwo-day delivery isn't available. Expedited shipping can't be sent to Hawaii, and standard transit takes 7–12 business days [§2.4].",
+      "stop_reason": "end_turn",
+      "retrieved": [
+        "§2.3",
+        "§2.5",
+        "KT-2027",
+        "KT-2004",
+        "§2.4",
+        "faq-orders",
+        "KT-2025",
+        "KT-2026"
+      ],
+      "cited": [
+        "KT-2027",
+        "§2.3",
+        "§2.4"
+      ],
+      "usage": {
+        "input": 2893,
+        "cache_read": 0,
+        "cache_write": 0,
+        "output": 1020,
+        "embed": 34
+      },
+      "retrieval_ms": 562,
+      "total_ms": 5819,
+      "cost_usd": 0.0008043999999999999,
+      "question_id": "Q02",
+      "score": 2,
+      "judge_reason": "All required facts are present and correct. The answer states that standard shipping is free (implying the $40 total when standard is free), correctly identifies the $20 heavy-item surcharge and $20 Alaska/Hawaii fee totaling $40, and correctly states that expedited (2-day) shipping is not available to Hawaii. No forbidden claims are made.",
+      "judge_cost_usd": 0.001156
+    },
+    {
+      "mode": "vector-8",
+      "answer": "Two saucepans are induction compatible, dishwasher safe, and under $60:\n\n- **KT-2003**, Tri-Ply Stainless Saucepan 3 Qt: list price $59.00, 73 in stock, 120-month warranty [KT-2003]\n- **KT-2017**, Tri-Ply Stainless Saucepan 2 Qt: list price $51.00, 71 in stock, 120-month warranty [KT-2017]\n\nKT-2018 (4 Qt) is also induction compatible and dishwasher safe, but its sale price of $63.99 is above $60, and it is out of stock until 2026-11-08 [KT-2018]. KT-2012 is not induction compatible [KT-2012].",
+      "stop_reason": "end_turn",
+      "retrieved": [
+        "faq-products",
+        "KT-2010",
+        "KT-2009",
+        "KT-2017",
+        "KT-2008",
+        "KT-2003",
+        "KT-2018",
+        "KT-2012"
+      ],
+      "cited": [
+        "KT-2003",
+        "KT-2017",
+        "KT-2018",
+        "KT-2012"
+      ],
+      "usage": {
+        "input": 2988,
+        "cache_read": 0,
+        "cache_write": 0,
+        "output": 815,
+        "embed": 30
+      },
+      "retrieval_ms": 539,
+      "total_ms": 3994,
+      "cost_usd": 0.0007107999999999999,
+      "question_id": "Q03",
+      "score": 1,
+      "judge_reason": "The answer correctly identifies two of the three required products (KT-2017 and KT-2003) with accurate prices ($51 and $59). However, it is missing the third required product: Tri-Ply Stainless Saucepan 1.5 Qt (KT-2016) at $45, which also meets all three criteria. The answer appropriately avoids the forbidden claim by noting that the 4 Qt saucepan exceeds the $60 limit.",
+      "judge_cost_usd": 0.001407
+    },
+    {
+      "mode": "vector-8",
+      "answer": "I'm sorry, but I can't refund the difference. The Tri-Ply Stainless Saute Pan 5 Qt (KT-2021) is marked final sale, and price adjustments aren't available for final sale items, whether you bought them at full price or not [§4.2][KT-2021]. The sale price is $111.99, against a list price of $124.00 [KT-2021]. The 14-day window doesn't change this.\n\nThe pan can't be returned for a change of mind, only for a defect [§1.4]. It has a 120-month warranty [KT-2021]. If it arrives faulty or develops a manufacturing defect, contact us under Section 3 [§1.4].",
+      "stop_reason": "end_turn",
+      "retrieved": [
+        "§4.2",
+        "faq-returns-refunds-and-money",
+        "§1.1",
+        "§1.8",
+        "KT-2021",
+        "§1.4",
+        "§9.6",
+        "§1.5"
+      ],
+      "cited": [
+        "§4.2",
+        "KT-2021",
+        "§1.4"
+      ],
+      "usage": {
+        "input": 3001,
+        "cache_read": 0,
+        "cache_write": 0,
+        "output": 848,
+        "embed": 38
+      },
+      "retrieval_ms": 489,
+      "total_ms": 4622,
+      "cost_usd": 0.0007298,
+      "question_id": "Q04",
+      "score": 2,
+      "judge_reason": "All three required facts are present and correct: the answer clearly states no price adjustment is available because the item is marked final sale, confirms final sale items cannot be returned (implying return-and-rebuy isn't possible), and mentions the 120-month warranty. The forbidden claim is not made.",
+      "judge_cost_usd": 0.001085
+    },
+    {
+      "mode": "vector-8",
+      "answer": "Yes, you may be able to get the difference back, but it depends on how the $296.99 price was set. Price drops are refunded if they happen within 14 days of delivery, for the same SKU (any color counts), and the lower price must be our own site price [§4.2]. The Stand Mixer 5 Qt (KT-1010) lists at $349.00 with a sale price of $296.99 [KT-1010]. If you paid $349.00 and the sale is ordinary, the difference is $52.01. Your window closes 14 days after delivery, about September 28, 2026 if it arrived September 14.\n\nThe adjustment is not available if the $296.99 price is a Kitchen Flash, bundle, promo-code, or member or verified-discount price [§4.2]. KT-1010 is not marked final sale [KT-1010], but please check the current price listing.\n\nTo request it, contact us by chat or email with your order number. We don't adjust prices automatically, and the refund goes to your original payment method [§4.2]. If you'd rather return the mixer and buy it again at the lower price, that's a normal return, with label fees, and the mixer must be unused and complete [§1.3, §4.2].",
+      "stop_reason": "end_turn",
+      "retrieved": [
+        "§4.2",
+        "faq-returns-refunds-and-money",
+        "§4.7",
+        "§9.6",
+        "§1.1",
+        "§1.3",
+        "faq-orders",
+        "KT-1010"
+      ],
+      "cited": [
+        "§4.2",
+        "KT-1010",
+        "§1.3"
+      ],
+      "usage": {
+        "input": 3071,
+        "cache_read": 0,
+        "cache_write": 0,
+        "output": 1462,
+        "embed": 35
+      },
+      "retrieval_ms": 596,
+      "total_ms": 7773,
+      "cost_usd": 0.00104335,
+      "question_id": "Q05",
+      "score": 2,
+      "judge_reason": "All required facts are present and correct: the answer confirms a price adjustment applies (within 14 days, not final sale), states the correct difference of $52.01, and explains the refund goes to the original payment method via chat/email with order number. No forbidden claims are made.",
+      "judge_cost_usd": 0.001211
+    },
+    {
+      "mode": "vector-8",
+      "answer": "Your refund goes back to the original payment methods, split in the same proportions you paid. The $50 gift card share comes back as a new e-gift card sent to the email on your order, and the rest goes back to your Visa [§1.9]. Any return label fee comes out of the Visa share first, and only from the gift card share if the Visa share isn't enough [§1.9]. The FAQ says that for change-of-mind returns, you get back the item price less the label fee. Original shipping isn't refunded [faq-returns-refunds-and-money].\n\nSince the knife arrived last week, unused and complete, it's within the 30-day standard window [§1.1]. It won't be returnable for a change of mind if it's engraved or personalized, or if its product page shows a \"Final sale\" badge [§1.4]. I don't have the Nakiri's catalog entry, so I can't confirm its price or final-sale status.\n\nTo work out your exact amounts, I'd need your order total and the label fee. Visa refunds usually take 5–10 business days to appear after we process the return within 3 business days of receiving it [faq-returns-refunds-and-money].",
+      "stop_reason": "end_turn",
+      "retrieved": [
+        "§1.9",
+        "faq-returns-refunds-and-money",
+        "§1.4",
+        "§1.1",
+        "§1.11",
+        "§1.8",
+        "§1.5",
+        "§1.2"
+      ],
+      "cited": [
+        "§1.9",
+        "faq-returns-refunds-and-money",
+        "§1.1",
+        "§1.4"
+      ],
+      "usage": {
+        "input": 2714,
+        "cache_read": 0,
+        "cache_write": 0,
+        "output": 1279,
+        "embed": 47
+      },
+      "retrieval_ms": 685,
+      "total_ms": 6601,
+      "cost_usd": 0.0009179500000000001,
+      "question_id": "Q06",
+      "score": 1,
+      "judge_reason": "The answer correctly states that the $50 gift card comes back as a new e-gift card and the remainder goes to the Visa with the label fee deducted from the Visa share first. However, it fails to provide the specific required amounts ($61.05 to Visa and confirms $50 as e-gift card), instead asking for the order total when the question already provided the $119 item price. The answer does not make the forbidden claim but omits the concrete calculation of refund amounts that should be derivable from the given information.",
+      "judge_cost_usd": 0.001488
+    },
+    {
+      "mode": "vector-8",
+      "answer": "No, the Compact Espresso Machine (KT-5006) won't work safely in London. It is built for 120 V, 60 Hz power only [KT-5006] [§7.7]. A plug adapter only changes the plug shape, not the voltage, so it would damage the machine [§3.3]. Using a voltage converter also voids the warranty [§3.3]. For a 220–240 V country, buying appliances locally is the suggested route [faq-products].\n\nWe can't ship your next order to London. We currently ship only to all 50 states, DC, Puerto Rico and military addresses [faq-orders].\n\nIf you haven't used the espresso machine yet and it's within 30 days of delivery, it can be returned if it's unused and complete [§1.3]. Once it's been used, we only take it back if it's faulty [§1.3]. I can't tell from the sources when your unit was delivered.",
+      "stop_reason": "end_turn",
+      "retrieved": [
+        "KT-5006",
+        "§1.3",
+        "§7.7",
+        "faq-products",
+        "faq-orders",
+        "KT-5014",
+        "§3.3",
+        "KT-5010"
+      ],
+      "cited": [
+        "KT-5006",
+        "§7.7",
+        "§3.3",
+        "faq-products",
+        "faq-orders",
+        "§1.3"
+      ],
+      "usage": {
+        "input": 2912,
+        "cache_read": 0,
+        "cache_write": 0,
+        "output": 1253,
+        "embed": 35
+      },
+      "retrieval_ms": 583,
+      "total_ms": 6690,
+      "cost_usd": 0.0009229500000000001,
+      "question_id": "Q07",
+      "score": 2,
+      "judge_reason": "All three required facts are present and correct: the answer clearly states the machine is 120V/60Hz only and a plug adapter won't work (will damage it), that using a voltage converter voids the warranty, and that Tom's Kitchen doesn't ship outside the US. No forbidden claims are made.",
+      "judge_cost_usd": 0.001122
+    },
+    {
+      "mode": "vector-8",
+      "answer": "No, not for a change of mind. Engraved knives are final sale and can be returned or exchanged only for a defect [§1.4]. Because the knife is engraved, the standard 30-day return [§1.1] and the Cook With It Guarantee [§1.2] don't apply, even though it's unused and still boxed. Gift returns are normally refunded as store credit to the recipient [§1.11], but that doesn't override the final sale rule. The holiday extension doesn't make final sale items returnable either [§1.5].\n\nIf the knife arrives faulty or develops a manufacturing defect, contact us within the warranty period. Final sale items are still covered by their warranty [§1.4].\n\nIf the knife turns out not to be engraved, the answer changes. An unused, complete item can be returned within 30 days of delivery for a refund to the original payment method [§1.1]. Please check the product page and your order before relying on this.\n\nThe sources don't cover reselling or passing the item to someone else, so I can't advise on that.",
+      "stop_reason": "end_turn",
+      "retrieved": [
+        "§1.4",
+        "§1.1",
+        "§1.5",
+        "§1.11",
+        "§1.3",
+        "faq-returns-refunds-and-money",
+        "§1.2",
+        "faq-orders"
+      ],
+      "cited": [
+        "§1.4",
+        "§1.1",
+        "§1.2",
+        "§1.11",
+        "§1.5"
+      ],
+      "usage": {
+        "input": 2730,
+        "cache_read": 0,
+        "cache_write": 0,
+        "output": 1418,
+        "embed": 37
+      },
+      "retrieval_ms": 569,
+      "total_ms": 7575,
+      "cost_usd": 0.00098755,
+      "question_id": "Q08",
+      "score": 2,
+      "judge_reason": "All required facts are present and correct: the answer clearly states that engraved items are final sale (no return for change of mind), and it explains that the warranty still covers defects. The answer appropriately avoids the forbidden claim of offering a return based on the catalog's final_sale column.",
+      "judge_cost_usd": 0.001119
+    },
+    {
+      "mode": "vector-8",
+      "answer": "Your shipping on standard service is free. Silver members get free standard shipping on every order with no minimum [§6.3], [§2.2]. Standard delivery takes 3–6 business days after the order ships [§2.2]. If you choose expedited instead, it costs $14.95 and isn't free for Silver members. The free expedited upgrade is a Gold benefit [§2.2], [§6.3].\n\nThe Rasp Zester (KT-3022) has a sale price of $12.99 [KT-3022]. Silver members earn 1.25 points per $1 of merchandise paid after promo-code and verified discounts [§6.1]. Assuming no promo code or verified discount, that's 16 points, since 16.24 is rounded down to a whole point [§6.1]. Points aren't earned on shipping or tax [§6.1]. A promo code would lower both the amount you pay for the item and your points. Points are added when the order ships [§6.1].",
+      "stop_reason": "end_turn",
+      "retrieved": [
+        "§6.3",
+        "§6.1",
+        "faq-pantry-club",
+        "§2.2",
+        "KT-3022",
+        "§2.3",
+        "§6.2",
+        "§3.5"
+      ],
+      "cited": [
+        "§6.3",
+        "§2.2",
+        "KT-3022",
+        "§6.1"
+      ],
+      "usage": {
+        "input": 2296,
+        "cache_read": 0,
+        "cache_write": 0,
+        "output": 1016,
+        "embed": 31
+      },
+      "retrieval_ms": 523,
+      "total_ms": 5261,
+      "cost_usd": 0.0007422500000000001,
+      "question_id": "Q09",
+      "score": 2,
+      "judge_reason": "All three required facts are present and correct: shipping is free for Silver members with no minimum, the Rasp Zester is $12.99, and Silver members earn 1.25 points per $1 resulting in 16 points (12.99 × 1.25 = 16.24 rounded down). The answer correctly explains the rounding and mentions no forbidden claims about $6.95 shipping or 1 point per $1.",
+      "judge_cost_usd": 0.00134
+    },
+    {
+      "mode": "vector-8",
+      "answer": "Before tax, the bundle is $119.00 [KT-2006]. The sources don't say which 8\" chef's knife you want, so here are both options:\n\n- **KT-3001 Chef's Knife 8\" ($89.00)** [KT-3001]: subtotal $208.00. WELCOME10 takes 10% off, or $20.80, which is under the $50 cap [§4.4]. Total: **$187.20**.\n- **KT-3038 Engraved Chef's Knife 8\" ($104.00)** [KT-3038]: subtotal $223.00. WELCOME10 takes $22.30 off. Total: **$200.70**. Engraved items are final sale [KT-3038].\n\nConditions:\n- WELCOME10 applies only if you haven't previously used an account at your shipping address, including through a guest order [§4.4].\n- The promo-code rules in §4.3 aren't in my sources, so I can't confirm they don't exclude these items.\n- Shipping costs to Ohio aren't listed in my sources, and neither item has a heavy-item surcharge listed [§2.3].",
+      "stop_reason": "end_turn",
+      "retrieved": [
+        "KT-2006",
+        "§4.4",
+        "KT-3001",
+        "§2.3",
+        "§4.1",
+        "§2.5",
+        "KT-2002",
+        "KT-3038"
+      ],
+      "cited": [
+        "KT-2006",
+        "KT-3001",
+        "§4.4",
+        "KT-3038",
+        "§2.3"
+      ],
+      "usage": {
+        "input": 1995,
+        "cache_read": 0,
+        "cache_write": 0,
+        "output": 1409,
+        "embed": 40
+      },
+      "retrieval_ms": 607,
+      "total_ms": 7508,
+      "cost_usd": 0.00091,
+      "question_id": "Q10",
+      "score": 0,
+      "judge_reason": "The answer makes the forbidden claim by applying the 10% WELCOME10 discount to the bundle, resulting in $187.20 for the KT-3001 option. The required facts state that WELCOME10 doesn't apply to bundles (bundle stays $119), the knife gets 10% off for $80.10, and shipping is free for a total of $199.10 before tax. The answer incorrectly applies the discount to the entire subtotal rather than only to the knife.",
+      "judge_cost_usd": 0.00144
+    },
+    {
+      "mode": "hybrid-8",
+      "answer": "Yes, you can return just the 3 qt saucepan (KT-2003) [§1.8, KT-2006], but I can't give you an exact amount from these sources.\n\nThe refund is the saucepan's list price × (bundle price paid ÷ the sum of the three pieces' list prices), rounded to the cent [§1.8]. The bundle's list price is $119.00 [KT-2006], but the individual piece prices aren't included, so I can't finish the calculation.\n\nBecause you haven't used the saucepan and you're within 30 days, the unused-item return should apply. That refunds the item price to your original payment method, less any return label fee [§1.2, faq-returns-refunds-and-money]. The policy text for that window (§1.1) isn't in my sources, so I can't confirm the label fee or other conditions.\n\nIf you share the price you paid for the bundle, I can work out the amount once the saucepan's list price is confirmed.",
+      "stop_reason": "end_turn",
+      "retrieved": [
+        "§1.2",
+        "faq-returns-refunds-and-money",
+        "§1.8",
+        "KT-2006",
+        "§4.2",
+        "KT-2011",
+        "KT-2012",
+        "§3.6"
+      ],
+      "cited": [
+        "§1.8",
+        "KT-2006",
+        "§1.2",
+        "faq-returns-refunds-and-money"
+      ],
+      "usage": {
+        "input": 3216,
+        "cache_read": 0,
+        "cache_write": 0,
+        "output": 1509,
+        "embed": 46
+      },
+      "retrieval_ms": 632,
+      "total_ms": 8139,
+      "cost_usd": 0.001083,
+      "question_id": "Q01",
+      "score": 1,
+      "judge_reason": "The answer correctly states that one piece of a bundle can be returned unused within 30 days and correctly describes the refund calculation method, but it fails to provide the required refund amount of $43.30 (or $51.25 before the fee). The answer claims the individual piece prices and bundle price paid aren't in the sources, when in fact the required calculation ($59 × $119 / $137 = $51.25, minus $7.95 fee = $43.30) should be derivable from available information.",
+      "judge_cost_usd": 0.001485
+    },
+    {
+      "mode": "hybrid-8",
+      "answer": "I can't confirm delivery to Honolulu or two-day delivery from these sources. Heavy items such as the KT-2027 9 Qt Dutch oven can ship by standard or expedited service only to the contiguous US [§2.3]. Hawaii isn't in the contiguous US, so I can't confirm this order can ship there.\n\nThe sources don't give base shipping rates or delivery times for either service, so I can't quote a two-day option. The only fixed shipping charge I can confirm is the heavy-item surcharge of $20.00 per Dutch oven [KT-2027]. It applies even when the order ships free, and promo codes and the Pantry Club don't reduce it [§2.3]. Two Dutch ovens would mean two surcharges [§2.3].\n\nPlease contact support to check whether they can ship to a Honolulu address and what expedited options and rates apply.",
+      "stop_reason": "end_turn",
+      "retrieved": [
+        "§2.3",
+        "KT-2027",
+        "KT-2004",
+        "KT-2025",
+        "KT-2026",
+        "§7.3",
+        "faq-products",
+        "faq-returns-refunds-and-money"
+      ],
+      "cited": [
+        "§2.3",
+        "KT-2027"
+      ],
+      "usage": {
+        "input": 3212,
+        "cache_read": 0,
+        "cache_write": 0,
+        "output": 993,
+        "embed": 34
+      },
+      "retrieval_ms": 601,
+      "total_ms": 5358,
+      "cost_usd": 0.0008228,
+      "question_id": "Q02",
+      "score": 1,
+      "judge_reason": "The answer correctly identifies that expedited shipping is not available to Hawaii and mentions the $20 heavy-item surcharge for the KT-2027. However, it fails to state that standard shipping is free (because the item is over $75) and fails to confirm the $20 Alaska/Hawaii fee, which together would total $40 in shipping charges. Instead, the answer declines to provide a total shipping cost and refers the customer to support.",
+      "judge_cost_usd": 0.001281
+    },
+    {
+      "mode": "hybrid-8",
+      "answer": "Two saucepans meet all three requirements:\n\n- **KT-2003** Tri-Ply Stainless Saucepan 3 Qt: list price $59.00, induction compatible, dishwasher safe, 73 in stock [KT-2003].\n- **KT-2017** Tri-Ply Stainless Saucepan 2 Qt: list price $51.00, induction compatible, dishwasher safe, 71 in stock [KT-2017].\n\nTwo other saucepans don't qualify. The KT-2018 4 Qt is induction compatible and dishwasher safe [KT-2018], but its list price is $71.00 and its sale price is $63.99 [KT-2018], both above $60. It is also out of stock until 2026-11-08 [KT-2018]. The KT-2012 2.5 Qt is $47.00 [KT-2012] but is not induction compatible [KT-2012].",
+      "stop_reason": "end_turn",
+      "retrieved": [
+        "faq-products",
+        "KT-2010",
+        "KT-2009",
+        "KT-2008",
+        "KT-2003",
+        "KT-2017",
+        "KT-2012",
+        "KT-2018"
+      ],
+      "cited": [
+        "KT-2003",
+        "KT-2017",
+        "KT-2018",
+        "KT-2012"
+      ],
+      "usage": {
+        "input": 2988,
+        "cache_read": 0,
+        "cache_write": 0,
+        "output": 1060,
+        "embed": 30
+      },
+      "retrieval_ms": 537,
+      "total_ms": 4582,
+      "cost_usd": 0.0008332999999999999,
+      "question_id": "Q03",
+      "score": 1,
+      "judge_reason": "The answer correctly identifies two of the three required saucepans (KT-2003 at $59 and KT-2017 at $51) with accurate details about induction compatibility and dishwasher safety. However, it fails to mention the Tri-Ply Stainless Saucepan 1.5 Qt (KT-2016) at $45, which is a required fact that meets all three criteria.",
+      "judge_cost_usd": 0.00139
+    },
+    {
+      "mode": "hybrid-8",
+      "answer": "No, the price difference can't be refunded. The pan is marked final sale, and price adjustments don't apply to final sale items, whether bought at full price or not [§4.2][KT-2021]. The sale price is $111.99 against a $124.00 list price [KT-2021].\n\nTwo options to check with support:\n\n- **Cook With It Guarantee:** Cookware returned within 60 days of delivery, if used, earns Tom's Kitchen store credit for the price you paid, not a card refund [§1.2]. The sources don't say whether final sale items are excluded, so confirm before returning.\n- **Standard return:** Returns can be started from your account, and a return label fee applies to change-of-mind returns [faq-returns-refunds-and-money]. The sources don't say whether final sale items qualify for a standard return.",
+      "stop_reason": "end_turn",
+      "retrieved": [
+        "faq-returns-refunds-and-money",
+        "§4.2",
+        "KT-2021",
+        "§1.2",
+        "faq-products",
+        "§3.1",
+        "§9.6",
+        "KT-2019"
+      ],
+      "cited": [
+        "§4.2",
+        "KT-2021",
+        "§1.2",
+        "faq-returns-refunds-and-money"
+      ],
+      "usage": {
+        "input": 3768,
+        "cache_read": 0,
+        "cache_write": 0,
+        "output": 1324,
+        "embed": 38
+      },
+      "retrieval_ms": 599,
+      "total_ms": 7084,
+      "cost_usd": 0.0010444999999999999,
+      "question_id": "Q04",
+      "score": 1,
+      "judge_reason": "The answer correctly states that no price adjustment applies because the item is final sale (required fact 1). However, it fails to clearly state that final sale items cannot be returned (required fact 2), instead leaving this ambiguous by asking the customer to 'confirm' with support. The answer also does not mention the 120-month warranty coverage (required fact 3). The answer avoids the forbidden claim but undermines it by suggesting return options that contradict the final sale policy.",
+      "judge_cost_usd": 0.001299
+    },
+    {
+      "mode": "hybrid-8",
+      "answer": "You may be owed the $52.01 difference, if your order is for KT-1010 (Stand Mixer 5 Qt) at $349.00 and the current price is $296.99 [KT-1010]. Price adjustments apply within 14 days of delivery, so your day-9 timing qualifies [§4.2]. The adjustment is not available if the sale price needs a promo code or is member-only or verified-discount pricing [§4.2]. Ask by chat or email with your order number, since adjustments aren't automatic. The refund goes to your original payment method [§4.2].\n\nIf the adjustment doesn't apply, you can return the unused, complete mixer within 30 days of delivery for the price paid, less the return label fee [§1.1, §1.3, faq-returns-refunds-and-money]. The $10.00 heavy-item surcharge isn't refunded unless the problem was ours [KT-1010, faq-returns-refunds-and-money]. My sources don't give the label fee amount.",
+      "stop_reason": "end_turn",
+      "retrieved": [
+        "faq-returns-refunds-and-money",
+        "§4.2",
+        "KT-1010",
+        "§1.1",
+        "§1.3",
+        "§2.8",
+        "§1.5",
+        "§4.7"
+      ],
+      "cited": [
+        "KT-1010",
+        "§4.2",
+        "§1.1",
+        "§1.3",
+        "faq-returns-refunds-and-money"
+      ],
+      "usage": {
+        "input": 2547,
+        "cache_read": 0,
+        "cache_write": 0,
+        "output": 1389,
+        "embed": 35
+      },
+      "retrieval_ms": 603,
+      "total_ms": 7566,
+      "cost_usd": 0.0009544500000000001,
+      "question_id": "Q05",
+      "score": 2,
+      "judge_reason": "Every required fact is present and correct: the answer confirms a price adjustment applies (day 9 within 14-day window, KT-1010 not final sale), states the correct difference of $52.01, and explains the adjustment requires contacting via chat/email with order number and will refund to the original payment method. No forbidden claims are made.",
+      "judge_cost_usd": 0.001237
+    },
+    {
+      "mode": "hybrid-8",
+      "answer": "Your refund depends on the knife's total price and whether it is final sale or engraved, neither of which you've told me.\n\nIf it's a standard, non-engraved knife returned for a change of mind:\n- Refunds follow your payment split. The $50 gift card share returns as a new e-gift card sent to your order email, and the rest goes back to your Visa [§1.9].\n- A $7.95 label fee comes off the Visa share first [§1.7, §1.9]. Original shipping isn't refunded [§1.7].\n- Because the knife is unused and within the 30-day window, you can choose a refund to the original payment instead of store credit [§1.2].\n\nIf it's final sale or engraved, it can't be returned for a change of mind [§1.4]. If it arrived faulty, the label is free and shipping is refunded [§1.7].",
+      "stop_reason": "end_turn",
+      "retrieved": [
+        "§1.9",
+        "faq-returns-refunds-and-money",
+        "§1.4",
+        "§1.2",
+        "§5.4",
+        "§1.7",
+        "§5.5",
+        "§5.1"
+      ],
+      "cited": [
+        "§1.9",
+        "§1.7",
+        "§1.2",
+        "§1.4"
+      ],
+      "usage": {
+        "input": 2776,
+        "cache_read": 0,
+        "cache_write": 0,
+        "output": 1519,
+        "embed": 47
+      },
+      "retrieval_ms": 564,
+      "total_ms": 8332,
+      "cost_usd": 0.00104415,
+      "question_id": "Q06",
+      "score": 1,
+      "judge_reason": "The answer correctly identifies that $50 returns as an e-gift card and the remainder goes to the Visa with the $7.95 label fee deducted from the Visa share first. However, it fails to state the specific refund amounts ($61.05 to Visa) and doesn't clearly confirm the item is refundable as a standard, non-engraved knife, instead asking for clarification the customer already provided (unused, arrived last week). The answer is correct in principle but incomplete in stating the exact required facts.",
+      "judge_cost_usd": 0.001409
+    },
+    {
+      "mode": "hybrid-8",
+      "answer": "**Plug adapter:** No. Our appliances are built for 120 V, 60 Hz North American power only, and a simple plug adapter will damage them [§3.3]. The Compact Espresso Machine (KT-5006) is rated 120 V [KT-5006]. Using a voltage converter also voids the warranty [§3.3]. Since London uses 220–240 V, we suggest buying appliances locally there [faq-products].\n\n**Shipping:** We can't ship to your new address. We currently ship only to all 50 states, DC, Puerto Rico and military addresses [2.1].\n\nCookware, knives and storage work anywhere, so your non-electric items can go with you [faq-products].",
+      "stop_reason": "end_turn",
+      "retrieved": [
+        "faq-products",
+        "KT-5006",
+        "§1.3",
+        "KT-5014",
+        "§7.7",
+        "faq-orders",
+        "§3.3",
+        "§9.6"
+      ],
+      "cited": [
+        "§3.3",
+        "KT-5006",
+        "faq-products"
+      ],
+      "usage": {
+        "input": 3211,
+        "cache_read": 0,
+        "cache_write": 0,
+        "output": 1340,
+        "embed": 35
+      },
+      "retrieval_ms": 526,
+      "total_ms": 7166,
+      "cost_usd": 0.00099635,
+      "question_id": "Q07",
+      "score": 2,
+      "judge_reason": "All three required facts are present and correct: the answer states the machine is 120V/60Hz only and a plug adapter will damage it, using a voltage converter voids the warranty, and Tom's Kitchen doesn't ship outside the US (only to US states, DC, Puerto Rico, and military addresses). No forbidden claims are made.",
+      "judge_cost_usd": 0.001105
+    },
+    {
+      "mode": "hybrid-8",
+      "answer": "No, not as a change of mind. The Engraved Chef's Knife 8\" (KT-3038) is final sale because it's engraved [§1.4][KT-3038]. Engraved knives are also excluded from the Cook With It Guarantee [§1.2], and final sale items can only be returned for a defect [§1.4].\n\nYour options:\n\n- **If the knife is faulty or damaged:** Contact us for a prepaid return label, which is free for defects. You'd be refunded the item price, original shipping and any heavy-item surcharge [§1.7]. Final sale items stay covered by the product warranty, which is 120 months for this knife [§1.4][KT-3038].\n- **If it's not faulty:** The sources don't offer a return or exchange for this. Cancelling is only possible before an order reaches Packing [§2.6], and your order has already been delivered.\n\nThe sources don't say whether the engraving can be changed or whether store credit is available for this item.",
+      "stop_reason": "end_turn",
+      "retrieved": [
+        "§1.4",
+        "faq-returns-refunds-and-money",
+        "faq-orders",
+        "§1.2",
+        "KT-3038",
+        "§1.7",
+        "§2.9",
+        "§2.6"
+      ],
+      "cited": [
+        "§1.4",
+        "KT-3038",
+        "§1.2",
+        "§1.7",
+        "§2.6"
+      ],
+      "usage": {
+        "input": 2961,
+        "cache_read": 0,
+        "cache_write": 0,
+        "output": 1058,
+        "embed": 37
+      },
+      "retrieval_ms": 603,
+      "total_ms": 6169,
+      "cost_usd": 0.00083065,
+      "question_id": "Q08",
+      "score": 2,
+      "judge_reason": "The answer correctly states that engraved items are final sale and cannot be returned for change of mind. However, it states the warranty is excluded from the Cook With It Guarantee but then says the product warranty (120 months) still covers defects. The required fact is that 'the warranty still covers defects' - this is present and correct. Both required facts are accurately conveyed: no returns for personalized items even unopened, and warranty covers defects.",
+      "judge_cost_usd": 0.001291
+    },
+    {
+      "mode": "hybrid-8",
+      "answer": "**Shipping: $0.** As a Silver member, you get free standard shipping on every order with no minimum [§6.3, §2.2]. Expedited shipping isn't free for Silver members. It costs $14.95 [§2.2, §6.3].\n\n**Points: 16.** The Rasp Zester (KT-3022) has a sale price of $12.99 [KT-3022]. Silver members earn 1.25 points per $1 of merchandise paid for [§6.1]. That's $12.99 × 1.25 = 16.24, rounded down to 16 points [§6.1]. Points are added when the order ships [§6.1].\n\nThis assumes no promo code or verified discount. If one applies, your points are calculated on the lower amount paid [§6.1]. Tax and shipping earn no points [§6.1].",
+      "stop_reason": "end_turn",
+      "retrieved": [
+        "§6.1",
+        "§6.3",
+        "§2.2",
+        "faq-pantry-club",
+        "§3.5",
+        "§2.3",
+        "KT-3022",
+        "§6.4"
+      ],
+      "cited": [
+        "§6.3",
+        "§2.2",
+        "KT-3022",
+        "§6.1"
+      ],
+      "usage": {
+        "input": 2259,
+        "cache_read": 0,
+        "cache_write": 0,
+        "output": 918,
+        "embed": 31
+      },
+      "retrieval_ms": 686,
+      "total_ms": 4852,
+      "cost_usd": 0.00068955,
+      "question_id": "Q09",
+      "score": 2,
+      "judge_reason": "All required facts are present and correct. The answer states shipping is free for Silver members with no minimum, correctly identifies the zester price as $12.99, and accurately calculates 16 points earned (12.99 × 1.25 = 16.24, rounded down). No forbidden claims are made.",
+      "judge_cost_usd": 0.001154
+    },
+    {
+      "mode": "hybrid-8",
+      "answer": "Your total depends on which 8\" chef's knife you want.\n\n- **KT-3001 Chef's Knife 8\"** ($89.00, not final sale): WELCOME10 takes 10% off, or $8.90, for $80.10 [KT-3001] [§4.4].\n- **KT-3038 Engraved Chef's Knife 8\"** ($104.00, final sale): WELCOME10 doesn't apply to final-sale items, so it's $104.00 [KT-3038] [§4.3]. Engraving costs $15 per knife [faq-products].\n\nThe **KT-2006 Everyday Cookware Bundle** is $119.00 [KT-2006]. WELCOME10 doesn't apply to bundles [§4.3], so it stays at $119.00.\n\nBefore tax:\n- With KT-3001: **$199.10**\n- With KT-3038: **$223.00**, or **$238.00** if engraved\n\nPrices exclude sales tax [§4.1]. My sources don't include shipping rates or Ohio tax, so I can't add those. WELCOME10 is for new customers only and works once per customer and household [§4.4].",
+      "stop_reason": "end_turn",
+      "retrieved": [
+        "KT-2006",
+        "§4.4",
+        "KT-3001",
+        "§4.3",
+        "KT-3038",
+        "§2.5",
+        "§4.1",
+        "faq-products"
+      ],
+      "cited": [
+        "KT-3001",
+        "§4.4",
+        "KT-3038",
+        "§4.3",
+        "faq-products",
+        "KT-2006",
+        "§4.1"
+      ],
+      "usage": {
+        "input": 2330,
+        "cache_read": 0,
+        "cache_write": 0,
+        "output": 1584,
+        "embed": 40
+      },
+      "retrieval_ms": 616,
+      "total_ms": 7845,
+      "cost_usd": 0.001031,
+      "question_id": "Q10",
+      "score": 2,
+      "judge_reason": "The answer correctly identifies that the customer likely wants the KT-3001 knife and correctly states the final total of $199.10 before tax, with accurate pricing for the bundle ($119, no discount), the knife ($80.10 after 10% discount), and free shipping. All required facts are present and correct. The answer appropriately provides alternatives for other knife options.",
+      "judge_cost_usd": 0.001317
+    },
+    {
+      "mode": "vector-16",
+      "answer": "Yes, you can return just the 3 qt saucepan (KT-2003) under the standard 30-day policy, if it is unused, complete, and not washed [§1.1]. Your delivery was about two weeks ago, so you're inside the window [§1.1].\n\nPartial bundle refunds are calculated as: $59.00 × (bundle price you paid ÷ sum of the list prices of all three pieces), rounded to the cent [§1.8, KT-2003]. The bundle's list price is $119.00 [KT-2006], but I can't finish the calculation. My sources don't give list prices for the 8\" and 10\" skillets (KT-2001, KT-2002), and I don't know your exact price paid. Check those two list prices and your order total to get the figure.\n\nA $7.95 return label fee is deducted from the refund, unless you're a Pantry Club Gold member (free) or you use your own tracked carrier with no fee [§1.7]. Sales tax on the saucepan is refunded, but original shipping is not [§1.1].\n\nIf you've washed the saucepan, it no longer counts as unused. You would then be limited to the Cook With It Guarantee, which gives store credit for the item price, not a card refund, within 60 days of delivery [§1.2].",
+      "stop_reason": "end_turn",
+      "retrieved": [
+        "§1.8",
+        "§1.1",
+        "faq-returns-refunds-and-money",
+        "§1.2",
+        "§1.5",
+        "§1.7",
+        "KT-2006",
+        "§2.3",
+        "KT-2011",
+        "§1.3",
+        "KT-2012",
+        "§1.4",
+        "§4.2",
+        "KT-2003",
+        "§1.12",
+        "KT-2017"
+      ],
+      "cited": [
+        "§1.1",
+        "§1.8",
+        "KT-2003",
+        "KT-2006",
+        "§1.7",
+        "§1.2"
+      ],
+      "usage": {
+        "input": 5079,
+        "cache_read": 0,
+        "cache_write": 0,
+        "output": 2079,
+        "embed": 46
+      },
+      "retrieval_ms": 643,
+      "total_ms": 10324,
+      "cost_usd": 0.0015543,
+      "question_id": "Q01",
+      "score": 1,
+      "judge_reason": "The answer correctly confirms that a partial bundle return is allowed within 30 days for unused items, and correctly states the $7.95 return label fee structure. However, it fails to provide the required specific refund amount of $43.30. Instead, it states the sources don't give list prices for the frying pans and asks the customer to look them up themselves, when the question implies these prices should be known and the calculation ($51.25 refund minus $7.95 fee = $43.30) should be provided.",
+      "judge_cost_usd": 0.001564
+    },
+    {
+      "mode": "vector-16",
+      "answer": "Standard shipping to Honolulu is free, because the $249.00 list price clears the $75 threshold [§2.2][KT-2027]. You would still pay $40.00 in shipping-related charges:\n\n- A $20.00 Hawaii remote-delivery fee per order, which applies even when standard shipping is free [§2.4].\n- A $20.00 heavy-item surcharge for this 20 lb pot [KT-2027]. It is charged per unit, even on free shipping, and Pantry Club membership doesn't reduce it [§2.3].\n\nTwo-day delivery isn't available. Expedited shipping is not offered to Hawaii [§2.4]. Standard transit to Hawaii is 7–12 business days [§2.4].",
+      "stop_reason": "end_turn",
+      "retrieved": [
+        "§2.3",
+        "§2.5",
+        "KT-2027",
+        "KT-2004",
+        "§2.4",
+        "faq-orders",
+        "KT-2025",
+        "KT-2026",
+        "KT-2046",
+        "faq-products",
+        "§2.2",
+        "§2.1",
+        "KT-2029",
+        "KT-2028",
+        "§1.1",
+        "§7.3"
+      ],
+      "cited": [
+        "§2.2",
+        "KT-2027",
+        "§2.4",
+        "§2.3"
+      ],
+      "usage": {
+        "input": 5455,
+        "cache_read": 0,
+        "cache_write": 0,
+        "output": 1173,
+        "embed": 34
+      },
+      "retrieval_ms": 582,
+      "total_ms": 6004,
+      "cost_usd": 0.0011371,
+      "question_id": "Q02",
+      "score": 2,
+      "judge_reason": "All required facts are present and correct: standard shipping is free due to the item's price exceeding $75, the $40 total in charges ($20 heavy-item surcharge + $20 Hawaii fee) is accurately stated, and expedited 2-day shipping is correctly identified as unavailable to Hawaii. The answer also provides helpful additional context about transit times.",
+      "judge_cost_usd": 0.001164
+    },
+    {
+      "mode": "vector-16",
+      "answer": "Three saucepans are induction compatible, dishwasher safe, and priced under $60, all in tri-ply stainless:\n\n- KT-2016 Tri-Ply Stainless Saucepan 1.5 Qt: $45.00, 226 in stock [KT-2016]\n- KT-2017 Tri-Ply Stainless Saucepan 2 Qt: $51.00, 71 in stock [KT-2017]\n- KT-2003 Tri-Ply Stainless Saucepan 3 Qt: $59.00, 73 in stock [KT-2003]\n\nAll three are listed as induction compatible and dishwasher safe [KT-2016, KT-2017, KT-2003], and all tri-ply stainless works on induction [§7.2].\n\nOur nonstick saucepans, KT-2011 and KT-2012, are not induction compatible [KT-2011, KT-2012], so they won't work for you.",
+      "stop_reason": "end_turn",
+      "retrieved": [
+        "faq-products",
+        "KT-2010",
+        "KT-2009",
+        "KT-2017",
+        "KT-2008",
+        "KT-2003",
+        "KT-2018",
+        "KT-2012",
+        "§7.2",
+        "KT-2016",
+        "KT-2021",
+        "KT-2011",
+        "KT-2019",
+        "§7.1",
+        "KT-2020",
+        "KT-2005"
+      ],
+      "cited": [
+        "KT-2016",
+        "KT-2017",
+        "KT-2003",
+        "§7.2",
+        "KT-2011",
+        "KT-2012"
+      ],
+      "usage": {
+        "input": 5173,
+        "cache_read": 0,
+        "cache_write": 0,
+        "output": 1358,
+        "embed": 30
+      },
+      "retrieval_ms": 590,
+      "total_ms": 6313,
+      "cost_usd": 0.0012008000000000001,
+      "question_id": "Q03",
+      "score": 2,
+      "judge_reason": "All three required products are correctly identified with accurate SKUs, prices, and relevant features (induction compatible, dishwasher safe, under $60). The answer appropriately excludes nonstick options that don't meet the criteria. Every required fact is present and correct.",
+      "judge_cost_usd": 0.001196
+    },
+    {
+      "mode": "vector-16",
+      "answer": "No, the price difference isn't refundable. Price adjustments don't apply to items marked final sale or clearance, even when they were bought at full price [§4.2]. The KT-2021 is listed as final sale and clearance, with a sale price of $111.99 against a $124.00 list price, so the $12.01 difference is not eligible [KT-2021].\n\nFinal sale items also can't be returned or exchanged for any reason other than a defect [§1.4].\n\nIf the pan arrives faulty or develops a manufacturing defect, it's covered by its warranty. Tri-ply stainless has a 120-month warranty from the delivery date [KT-2021] [§3.1]. Contact us with your order number if that happens.",
+      "stop_reason": "end_turn",
+      "retrieved": [
+        "§4.2",
+        "faq-returns-refunds-and-money",
+        "§1.1",
+        "§1.8",
+        "KT-2021",
+        "§1.4",
+        "§9.6",
+        "§1.5",
+        "faq-products",
+        "§1.2",
+        "§4.3",
+        "§4.7",
+        "§2.3",
+        "KT-2023",
+        "faq-orders",
+        "§3.1"
+      ],
+      "cited": [
+        "§4.2",
+        "KT-2021",
+        "§1.4",
+        "§3.1"
+      ],
+      "usage": {
+        "input": 5879,
+        "cache_read": 0,
+        "cache_write": 0,
+        "output": 1091,
+        "embed": 38
+      },
+      "retrieval_ms": 583,
+      "total_ms": 5820,
+      "cost_usd": 0.0011391,
+      "question_id": "Q04",
+      "score": 2,
+      "judge_reason": "All three required facts are present and correct: no price adjustment applies to final sale items, final sale items cannot be returned, and the 120-month warranty is confirmed. The forbidden claim is not made.",
+      "judge_cost_usd": 0.00099
+    },
+    {
+      "mode": "vector-16",
+      "answer": "Yes, you may be eligible for a price adjustment. The Stand Mixer 5 Qt (KT-1010) has a sale price of $296.99, so the difference from your $349.00 is $52.01 [KT-1010]. Since it was delivered 9 days ago, you're within the 14-day window, and the adjustment applies to the same SKU on our own site [§4.2]. The refund goes to your original payment method [§4.2].\n\nEligibility depends on two things:\n- **Kitchen Flash:** If the $296.99 price is a Kitchen Flash event (lasting 24 hours or less), it isn't eligible [§4.1, §4.2].\n- **Promo codes:** If the lower price requires a promo code, it isn't eligible [§4.2].\n\nTo request the adjustment, message us through chat or email with your order number. We don't adjust prices automatically [§4.2].\n\nIf the adjustment doesn't apply, you can return the mixer within 30 days of delivery, which is October 14, and buy it again at the lower price. Label fees apply, and the sources don't give the amount. Original shipping and the $10.00 heavy-item surcharge aren't refunded [KT-1010, faq-returns-refunds-and-money, §1.1].",
+      "stop_reason": "end_turn",
+      "retrieved": [
+        "§4.2",
+        "faq-returns-refunds-and-money",
+        "§4.7",
+        "§9.6",
+        "§1.1",
+        "§1.3",
+        "faq-orders",
+        "KT-1010",
+        "§1.6",
+        "§4.3",
+        "§1.8",
+        "§4.1",
+        "§1.12",
+        "§1.5",
+        "§2.6",
+        "§3.1"
+      ],
+      "cited": [
+        "KT-1010",
+        "§4.2",
+        "§4.1",
+        "faq-returns-refunds-and-money",
+        "§1.1"
+      ],
+      "usage": {
+        "input": 4844,
+        "cache_read": 0,
+        "cache_write": 0,
+        "output": 1616,
+        "embed": 35
+      },
+      "retrieval_ms": 637,
+      "total_ms": 8316,
+      "cost_usd": 0.0012976500000000002,
+      "question_id": "Q05",
+      "score": 2,
+      "judge_reason": "The answer contains all required facts: confirms price adjustment eligibility within 14-day window, correctly calculates the $52.01 difference, states the refund goes to original payment method, and explains the customer must request via chat or email with order number (not automatic). The answer also appropriately qualifies eligibility by noting Kitchen Flash and promo code exceptions, and provides accurate return information. No forbidden claims are made.",
+      "judge_cost_usd": 0.001354
+    },
+    {
+      "mode": "vector-16",
+      "answer": "Your Nakiri knife (KT-3010) is unused and was delivered within the last 30 days, so it qualifies for a standard return [§1.1]. Refunds go back to the original payment methods in the same proportions you paid [§1.9].\n\nIf you paid $119.00 total [KT-3010] with no promo code, the split would be:\n\n- **Gift card:** $50.00 comes back as a new e-gift card sent to the email on your order [§1.9].\n- **Visa:** $69.00, less the $7.95 return label fee, so $61.05 [§1.7, §1.9].\n\nThe label fee comes out of your Visa share first [§1.9]. Sales tax on the knife is also refunded [§1.1], so the Visa amount would rise by that tax. If you use your own tracked carrier, no label fee applies and Visa would receive $69.00 [§1.7]. Original shipping is not refunded [§1.1].\n\nIf your total differs from $119.00 because of a promo code or tax, the proportions change, so send me your order total for exact amounts. The Visa refund usually appears 5–10 business days after the return is inspected, which takes up to 3 business days [§1.10].",
+      "stop_reason": "end_turn",
+      "retrieved": [
+        "§1.9",
+        "faq-returns-refunds-and-money",
+        "§1.4",
+        "§1.1",
+        "§1.11",
+        "§1.8",
+        "§1.5",
+        "§1.2",
+        "§5.4",
+        "§4.3",
+        "KT-3010",
+        "§5.5",
+        "§1.10",
+        "faq-orders",
+        "§1.7",
+        "§1.3"
+      ],
+      "cited": [
+        "§1.1",
+        "§1.9",
+        "KT-3010",
+        "§1.7",
+        "§1.10"
+      ],
+      "usage": {
+        "input": 4758,
+        "cache_read": 0,
+        "cache_write": 0,
+        "output": 1541,
+        "embed": 47
+      },
+      "retrieval_ms": 586,
+      "total_ms": 8141,
+      "cost_usd": 0.0012533499999999999,
+      "question_id": "Q06",
+      "score": 2,
+      "judge_reason": "The answer correctly states that $50 comes back as an e-gift card and $61.05 goes to the Visa (after the $7.95 label fee is deducted from the Visa share first). It accurately presents the full $119 item price as refundable for an unused return within 30 days, and correctly avoids the forbidden claims. The answer also appropriately notes that sales tax would adjust the Visa amount and provides helpful context about label fees and timing.",
+      "judge_cost_usd": 0.001457
+    },
+    {
+      "mode": "vector-16",
+      "answer": "You can't safely use the Compact Espresso Machine (KT-5006) in London with a plug adapter. It is built for 120 V [KT-5006], and a simple plug adapter will damage it [faq-products]. A voltage converter would avoid that damage but voids the warranty [§3.3]. London runs on 220–240 V, so buying an espresso machine locally is the suggested option [faq-products]. Cookware, knives and storage work anywhere [faq-products].\n\nWe can't ship your next order to London. We ship only to the 50 US states, DC, Puerto Rico and APO/FPO/DPO addresses, and not to other countries or freight forwarders [§2.1]. If you order before you move, you can have it delivered to a US address you can access. Items with a heavy-item surcharge need a street address, not a PO box [§2.1].",
+      "stop_reason": "end_turn",
+      "retrieved": [
+        "KT-5006",
+        "§1.3",
+        "§7.7",
+        "faq-products",
+        "faq-orders",
+        "KT-5014",
+        "§3.3",
+        "KT-5010",
+        "KT-5011",
+        "faq-contacting-us",
+        "KT-5001",
+        "KT-5008",
+        "§9.6",
+        "faq-safety",
+        "§2.1",
+        "KT-5017"
+      ],
+      "cited": [
+        "KT-5006",
+        "faq-products",
+        "§3.3",
+        "§2.1"
+      ],
+      "usage": {
+        "input": 4986,
+        "cache_read": 0,
+        "cache_write": 0,
+        "output": 1263,
+        "embed": 35
+      },
+      "retrieval_ms": 552,
+      "total_ms": 6679,
+      "cost_usd": 0.00113535,
+      "question_id": "Q07",
+      "score": 2,
+      "judge_reason": "All three required facts are present and correct: the machine is 120V/60Hz only and a plug adapter will damage it, using a voltage converter voids the warranty, and Tom's Kitchen doesn't ship to the UK. The answer also correctly avoids the forbidden claim that the machine would work with an adapter or that UK shipping is possible.",
+      "judge_cost_usd": 0.001154
+    },
+    {
+      "mode": "vector-16",
+      "answer": "No, I can't offer a return for a change of mind. Engraved items can't be returned or exchanged except for a defect [§1.4]. The Cook With It Guarantee also excludes engraved knives [§1.2]. The KT-3038 listing shows final_sale: no, but its description says engraved items are final sale [KT-3038], and §1.4 applies to engraved items whatever the badge says.\n\nAn exchange isn't an option either. Exchanges only cover a different color or size of the same product [§1.6].\n\nIf the knife arrives faulty or damaged, contact us. The return label is free and original shipping is refunded in full [§1.7]. KT-3038 also has a 120-month warranty [KT-3038].\n\nThe sources don't say whether anything else can be done for an unused, engraved gift that your brother already owns.",
+      "stop_reason": "end_turn",
+      "retrieved": [
+        "§1.4",
+        "§1.1",
+        "§1.5",
+        "§1.11",
+        "§1.3",
+        "faq-returns-refunds-and-money",
+        "§1.2",
+        "faq-orders",
+        "§1.12",
+        "§1.8",
+        "§1.13",
+        "§4.2",
+        "KT-3038",
+        "§1.6",
+        "§2.6",
+        "§1.7"
+      ],
+      "cited": [
+        "§1.4",
+        "§1.2",
+        "KT-3038",
+        "§1.6",
+        "§1.7"
+      ],
+      "usage": {
+        "input": 4772,
+        "cache_read": 0,
+        "cache_write": 0,
+        "output": 1169,
+        "embed": 37
+      },
+      "retrieval_ms": 586,
+      "total_ms": 6391,
+      "cost_usd": 0.00106725,
+      "question_id": "Q08",
+      "score": 0,
+      "judge_reason": "The answer correctly states that engraved items are final sale and cannot be returned for change of mind (required fact 1). It also correctly mentions the warranty covers defects (required fact 2). However, the answer makes a forbidden claim by saying 'The KT-3038 listing shows final_sale: no' and referencing the catalog's final_sale column, which directly violates the instruction not to justify the policy based on the catalog's final_sale column value.",
+      "judge_cost_usd": 0.001276
+    },
+    {
+      "mode": "vector-16",
+      "answer": "**Shipping:** Your Silver membership gives you free standard shipping on every order, with no minimum [§6.3]. Standard shipping takes 3–6 business days after the order ships [§2.2]. Expedited (2 business days) costs $14.95 [§2.2]. Free expedited shipping is a Gold benefit, so it doesn't apply to you [§6.3]. The Rasp Zester isn't among the heavy items with surcharges [§2.3], so no surcharge applies.\n\n**Points:** The Rasp Zester (KT-3022) has a sale price of $12.99 [KT-3022]. Silver members earn 1.25 points per $1 of merchandise paid, after promo-code and verified discounts [§6.1]. That's 12.99 × 1.25 = 16.2375, which rounds down to **16 points** [§6.1]. Points are added when the order ships, and none are earned on tax or shipping [§6.1]. If you use a promo code, your points will be lower.",
+      "stop_reason": "end_turn",
+      "retrieved": [
+        "§6.3",
+        "§6.1",
+        "faq-pantry-club",
+        "§2.2",
+        "KT-3022",
+        "§2.3",
+        "§6.2",
+        "§3.5",
+        "§4.6",
+        "§1.7",
+        "§6.4",
+        "§1.1",
+        "KT-3021",
+        "KT-3035",
+        "§6.5",
+        "KT-4015"
+      ],
+      "cited": [
+        "§6.3",
+        "§2.2",
+        "§2.3",
+        "KT-3022",
+        "§6.1"
+      ],
+      "usage": {
+        "input": 3884,
+        "cache_read": 0,
+        "cache_write": 0,
+        "output": 1189,
+        "embed": 31
+      },
+      "retrieval_ms": 558,
+      "total_ms": 5795,
+      "cost_usd": 0.00098755,
+      "question_id": "Q09",
+      "score": 2,
+      "judge_reason": "Every required fact is present and correct. The answer states shipping is free for Silver members with no minimum, the zester is $12.99, and Silver members earn 1.25 points per $1 resulting in 16 points (with the calculation shown: 12.99 × 1.25 = 16.2375 rounded down). The forbidden claims are not made.",
+      "judge_cost_usd": 0.001276
+    },
+    {
+      "mode": "vector-16",
+      "answer": "Your total before tax and shipping depends on which 8\" chef's knife you want, since the catalog lists two:\n\n- **KT-3001 Chef's Knife 8\"** (list $89.00): WELCOME10 takes 10% off, or $8.90, so the knife costs $80.10. With the bundle, the total is **$199.10** [KT-3001] [§4.4].\n- **KT-3038 Engraved Chef's Knife 8\"** (list $104.00, no engraving): 10% off is $10.40, so the knife costs $93.60. With the bundle, the total is **$212.60** [KT-3038] [§4.4].\n\nWELCOME10 doesn't apply to the bundle, because promo codes don't cover bundles [§4.3]. The bundle stays at its $119.00 list price [KT-2006].\n\nThe sources don't include shipping costs, so I can't give a figure for Ohio. Prices exclude sales tax [§4.1], and the sources don't list Ohio's rate.\n\nWELCOME10 works once per customer and household, and not on a guest order placed after an account was already used at the same address [§4.4]. If that applies to you, the discounts above won't apply.",
+      "stop_reason": "end_turn",
+      "retrieved": [
+        "KT-2006",
+        "§4.4",
+        "KT-3001",
+        "§2.3",
+        "§4.1",
+        "§2.5",
+        "KT-2002",
+        "KT-3038",
+        "KT-3010",
+        "KT-2010",
+        "§4.3",
+        "faq-products",
+        "KT-2009",
+        "KT-2008",
+        "§1.8",
+        "KT-2030"
+      ],
+      "cited": [
+        "KT-3001",
+        "§4.4",
+        "KT-3038",
+        "§4.3",
+        "KT-2006",
+        "§4.1"
+      ],
+      "usage": {
+        "input": 4646,
+        "cache_read": 0,
+        "cache_write": 0,
+        "output": 1505,
+        "embed": 40
+      },
+      "retrieval_ms": 601,
+      "total_ms": 7485,
+      "cost_usd": 0.0012230999999999998,
+      "question_id": "Q10",
+      "score": 1,
+      "judge_reason": "The answer correctly identifies that WELCOME10 doesn't apply to bundles (bundle stays $119), correctly calculates the 10% discount on the KT-3001 knife ($80.10), and correctly states the subtotal is $199.10 for that knife option. However, the answer fails to state that shipping is free (subtotal over $75), which is a required fact. The answer instead says it cannot determine shipping costs, which is incorrect based on the answer key's clear statement that shipping is free to Ohio.",
+      "judge_cost_usd": 0.001484
+    }
+  ]
+}
