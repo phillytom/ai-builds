@@ -1,0 +1,22 @@
+{
+  "name": "03-rag-pgvector",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "ingest": "tsx ingest.ts",
+    "ask": "tsx ask.ts",
+    "start": "tsx run.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^1.7.0",
+    "@google/genai": "^3.0.0",
+    "@neondatabase/serverless": "^1.2.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
