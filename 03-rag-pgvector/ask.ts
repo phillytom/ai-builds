@@ -1,11 +1,12 @@
-// Ask one question: npm run ask -- "Can I return just the saucepan from the bundle?" [--vector | --full]
-// Defaults to hybrid search. Prints what was retrieved, then the answer.
-import { ask, type Mode } from "./bot.ts";
+// Ask one question: npm run ask -- "Can I return just the saucepan from the bundle?" [--mode=vector-16]
+// Modes: full, vector-8, hybrid-8, vector-16 (the default). Prints what was retrieved, then the answer.
+import { ask, MODES, type Mode } from "./bot.ts";
 
 const args = process.argv.slice(2);
-const mode: Mode = args.includes("--vector") ? "vector" : args.includes("--full") ? "full" : "hybrid";
+const mode = (args.find((a) => a.startsWith("--mode="))?.slice(7) ?? "vector-16") as Mode;
+if (!MODES.includes(mode)) throw new Error(`Unknown mode ${mode}; use one of ${MODES.join(", ")}`);
 const question = args.filter((a) => !a.startsWith("--")).join(" ");
-if (!question) throw new Error('Usage: npm run ask -- "your question" [--vector | --full]');
+if (!question) throw new Error('Usage: npm run ask -- "your question" [--mode=full|vector-8|hybrid-8|vector-16]');
 
 const r = await ask(question, mode);
 if (r.retrieved.length) console.log(`Retrieved (${mode}): ${r.retrieved.join(", ")}\n`);

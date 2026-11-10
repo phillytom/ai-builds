@@ -1,14 +1,15 @@
-// The support bot. Three modes, one model:
-//   full    no retrieval: the whole handbook and catalog in the prompt (session 02's prompt, cached), as the baseline
-//   vector  top 8 chunks by vector search
-//   hybrid  top 8 chunks by vector + keyword search, fused
+// The support bot. Four modes, one model:
+//   full       no retrieval: the whole handbook and catalog in the prompt (session 02's prompt, cached), as the baseline
+//   vector-8   top 8 chunks by vector search (the naive version)
+//   hybrid-8   top 8 chunks by vector + keyword search, fused
+//   vector-16  top 16 chunks by vector search
 import type Anthropic from "@anthropic-ai/sdk";
 import { buildSystemPrompt, TODAY } from "../02-context-engineering/context.ts";
 import { anthropic, MODEL, EMBED_MODEL, costOf } from "./shared.ts";
 import { vectorSearch, hybridSearch, type Retrieval } from "./search.ts";
 
-export type Mode = "full" | "vector" | "hybrid";
-export const MODES: Mode[] = ["full", "vector", "hybrid"];
+export const MODES = ["full", "vector-8", "hybrid-8", "vector-16"] as const;
+export type Mode = (typeof MODES)[number];
 
 const RAG_SYSTEM = `You are the customer support assistant for Tom's Kitchen, an online store for kitchen appliances and cookware.
 Today is ${TODAY}.
@@ -52,7 +53,8 @@ export async function ask(question: string, mode: Mode): Promise<Answer> {
     system = [{ type: "text", text: FULL_SYSTEM, cache_control: { type: "ephemeral" } }];
     content = question;
   } else {
-    retrieval = await (mode === "vector" ? vectorSearch : hybridSearch)(question);
+    const [method, k] = mode.split("-");
+    retrieval = await (method === "vector" ? vectorSearch : hybridSearch)(question, Number(k));
     system = [{ type: "text", text: RAG_SYSTEM }];
     const sources = retrieval.hits.map((h) => `<source id="${h.id}">\n${h.text}\n</source>`).join("\n");
     content = `<sources>\n${sources}\n</sources>\n\nCustomer question: ${question}`;

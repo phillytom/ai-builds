@@ -30,6 +30,13 @@ for (let i = 0; i < chunks.length; i += 100) {
   );
 }
 
+// Keyword weights. Postgres full-text ranking (ts_rank_cd) has no idea how rare a word is, so "order" counts as much
+// as "zester". This table holds each word's inverse document frequency (the BM25 formula): rare words weigh more.
+await sql`DROP TABLE IF EXISTS terms`;
+await sql`CREATE TABLE terms AS
+          SELECT word, ln((${chunks.length} - ndoc + 0.5) / (ndoc + 0.5) + 1) AS idf FROM ts_stat('SELECT tsv FROM chunks')`;
+await sql`ALTER TABLE terms ADD PRIMARY KEY (word)`;
+
 // HNSW for cosine distance, and GIN for full-text. At 230 rows Postgres may still scan; at 230,000 it wouldn't.
 await sql`CREATE INDEX ON chunks USING hnsw (embedding vector_cosine_ops)`;
 await sql`CREATE INDEX ON chunks USING gin (tsv)`;

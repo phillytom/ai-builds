@@ -1,6 +1,7 @@
 // Two ways to find the chunks for a question.
 //   vectorSearch: the naive version. Nearest neighbours by cosine distance, nothing else.
-//   hybridSearch: vector search and Postgres full-text search side by side, merged with reciprocal rank fusion (RRF).
+//   hybridSearch: vector search and keyword search side by side, merged with reciprocal rank fusion (RRF). The keyword
+//                 side uses Postgres full-text parsing (stemming, stop words) with IDF weights, a cut-down BM25.
 import { sql, embed, toVector } from "./shared.ts";
 
 export type Hit = { id: string; title: string; text: string; vec_rank: number | null; kw_rank: number | null };
@@ -24,18 +25,20 @@ export async function hybridSearch(question: string, k = TOP_K): Promise<Retriev
   const started = performance.now();
   const { vectors, tokens } = await embed([question], "query");
   const v = toVector(vectors[0]);
-  // plainto_tsquery ANDs every word, so a long customer question would match nothing. Swapping & for | makes it
-  // "any of these words", and ts_rank_cd puts chunks matching more of them (and closer together) first.
+  // Keyword side: a chunk scores the summed IDF weight (see ingest.ts) of the question's words it contains, so one
+  // rare word ("zester", "nakiri", "honolulu") outweighs several common ones ("order", "shipping", "bought").
   const rows = await sql`
-    WITH q AS (SELECT replace(plainto_tsquery('english', ${question})::text, '&', '|')::tsquery AS query),
+    WITH qwords AS (SELECT unnest(tsvector_to_array(to_tsvector('english', ${question}))) AS word),
     vec AS (
       SELECT id, row_number() OVER (ORDER BY embedding <=> ${v}::vector) AS r
       FROM chunks ORDER BY embedding <=> ${v}::vector LIMIT ${POOL}
     ),
     kw AS (
-      SELECT id, row_number() OVER (ORDER BY ts_rank_cd(tsv, q.query) DESC) AS r
-      FROM chunks, q WHERE tsv @@ q.query
-      ORDER BY ts_rank_cd(tsv, q.query) DESC LIMIT ${POOL}
+      SELECT c.id, row_number() OVER (ORDER BY sum(t.idf) DESC, c.id) AS r
+      FROM chunks c
+      JOIN terms t ON t.word = ANY (tsvector_to_array(c.tsv))
+      JOIN qwords q ON q.word = t.word
+      GROUP BY c.id ORDER BY sum(t.idf) DESC, c.id LIMIT ${POOL}
     )
     SELECT c.id, c.title, c.text, vec.r::int AS vec_rank, kw.r::int AS kw_rank
     FROM vec FULL JOIN kw USING (id) JOIN chunks c USING (id)
